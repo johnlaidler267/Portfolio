@@ -1,0 +1,55 @@
+/* This is a a service card (e.g. YouTube) */
+.service-card {
+    background-color: aliceblue;
+    margin: 1rem;
+    padding: 1rem;
+    width: 98%;
+}
+
+/* Text column within service card */
+.service-card .col-sm-8 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Image column within service card */
+.service-card .col-sm-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Actual text within text column within service card */
+.stack {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Bakground for the whole stack */
+.portfolio-bg {
+    background-color: #736c56;
+    opacity: 0.8;
+    padding: 1.5rem;
+}
+
+/* Button Styling */
+.btn-primary {
+    --bs-btn-bg: black !important;
+    --bs-btn-bg-hover: black !important;
+    --bs-btn-bg-active: black !important;
+    --bs-btn-border: black !important;
+    --bs-btn-border-hover: black !important;
+    --bs-btn-border-active: black !important;
+    --bs-btn-color: white;
+}
+
+/* Header Styling (e.g. GitHub) */
+.h5 {
+    font-weight: bold !important;
+}
+
+.service-image {
+    position: relative;
+    right: -30px;
+}

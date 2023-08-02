@@ -1,0 +1,28 @@
+/* This is my name at the top of the page */
+.name {
+    font-size: 4.5rem !important;
+    font-weight: bold !important;
+}
+
+/* This is the bg div for the header (my name/contact) */
+.header-bg{
+    background-color: black;
+    border-bottom: 0.2rem solid white;
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 4rem;
+    background-color: #000000;
+    opacity: 0.8;
+}
+
+/* This is the card that the header text is situated on */
+.header-card {
+    width:90%;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    border: none;
+    padding: 1rem;
+}

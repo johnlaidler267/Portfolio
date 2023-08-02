@@ -1,0 +1,27 @@
+/* Background div for the about me section */
+.abtme-bg {
+    background-image: radial-gradient(#ffffff 0.5px, rgb(181, 161, 137) 0.5px);
+    background-size: 10px 10px;
+    color: white;
+    padding: 3rem;
+    text-align: center;
+    border: none;
+    display: flex;
+    justify-content: center;
+}
+
+/* Card w/ the abt me text&image */
+.abtme-card {
+    border: 0.2rem solid black;
+    background-color: aliceblue;
+    color: black;
+    padding: 1rem;
+    width: 90%;
+}
+
+/* Card that acts as a shadow to the about me card (above) */
+.shadow-card {
+    z-index: 0;
+    width:52%;
+    border: 0.2rem solid red;
+}
