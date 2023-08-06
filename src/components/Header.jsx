@@ -5,15 +5,10 @@ import '../styling/Header.css'
 import React from 'react';
 
 //React Components
-import { Card, Container, Button } from "react-bootstrap";
-import Zoom from 'react-reveal/Zoom'
+import { Card } from "react-bootstrap";
 
 //Custom Components
 import Contact from './Contact';
-import NavBar from './NavBar';
-
-//Images
-import bg from '../images/travelbg.png'
 
 // Header component: Contains my name/conctact info
 const Header = () => {

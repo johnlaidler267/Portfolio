@@ -2,7 +2,7 @@
 import React from 'react';
 
 //REACT BOOTSTRAP
-import { Card, Col, Row } from "react-bootstrap";
+import { Card, Col, Row, Container } from "react-bootstrap";
 import Zoom from 'react-reveal/Zoom'
 
 //IMAGES
@@ -12,11 +12,11 @@ import profile from "../images/ProfilePic.jpg";
 import '../styling/AboutMe.css';
 
 //ABOUT ME: My profile picture, and a short description.
-const AboutMe: React.FC = () => {
+const AboutMe = () => {
     return (
         <div className='abtme-bg'>
 
-            <div >
+            <Container >
 
                 <Card className='abtme-card revealUp' bsPrefix='customCard'>
                     <Card.Body>
@@ -41,7 +41,7 @@ const AboutMe: React.FC = () => {
                     </Card.Body>
                 </Card>
 
-            </div >
+            </Container >
         </div >
     );
 };

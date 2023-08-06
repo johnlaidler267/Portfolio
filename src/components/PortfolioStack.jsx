@@ -18,7 +18,7 @@ const PortfolioStack = () => {
     return (
         <div className='portfolio-bg' id='portfolio'>
 
-            <Container style={{ width: '100%', maxWidth: '90%' }}>
+            <Container style={{ maxWidth: '90%' }}>
 
 
                 <div className='portfolio-grid'>

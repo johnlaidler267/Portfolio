@@ -1,12 +1,18 @@
 import './App.css';
-import NavBar from './components/NavBar.tsx';
-import Header from './components/Header.tsx';
-import AboutMe from './components/AboutMe.tsx';
-import PortfolioStack from './components/PortfolioStack.tsx';
-import DirectContact from './components/DirectContact.tsx';
-import './scroll.js'
+import reveal from './scroll.js'
+import NavBar from './components/NavBar.jsx';
+import Header from './components/Header.jsx';
+import AboutMe from './components/AboutMe.jsx';
+import PortfolioStack from './components/PortfolioStack.jsx';
+import DirectContact from './components/DirectContact.jsx';
+import { useEffect } from 'react';
+
 
 function App() {
+  useEffect(() => {
+    reveal();
+  });
+
   return (
     <div className="App">
       <NavBar />
