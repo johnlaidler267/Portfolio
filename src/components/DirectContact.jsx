@@ -1,7 +1,6 @@
 import React from 'react';
 import { Card, Container, Col, Row, InputGroup, Form, Button } from "react-bootstrap";
 import '../styling/DirectContact.css'
-import Zoom from 'react-reveal/Zoom'
 //ICONS
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 
@@ -9,7 +8,6 @@ import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 const DirectContact = () => {
     return (
         <div className='direct-contact-bg' id='direct-contact'>
-            <Zoom>
                 <div className='direct-contact-div'>
                     <>
                         <h5 style={{ fontWeight: 'bold', fontSize: '2rem' }}>Get in Touch!</h5>
@@ -40,8 +38,6 @@ const DirectContact = () => {
                         <p><FaEnvelope style={{ margin: '2px' }} /> johnmlaidler@comcast.net</p>
                     </div>
                 </div>
-
-            </Zoom>
         </div >
     );
 };

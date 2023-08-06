@@ -3,7 +3,6 @@ import React from 'react';
 
 //REACT BOOTSTRAP
 import { Card, Col, Row, Container } from "react-bootstrap";
-import Zoom from 'react-reveal/Zoom'
 
 //IMAGES
 import profile from "../images/ProfilePic.jpg";
@@ -33,9 +32,7 @@ const AboutMe = () => {
                             <Col sm={4} style={{
                                 borderLeft: ".25rem dashed silver"
                             }}>
-                                <Zoom>
                                     < Card.Img src={profile} style={{ borderRadius: '3%', width: '100%' }} />
-                                </Zoom>
                             </Col>
                         </Row>
                     </Card.Body>
