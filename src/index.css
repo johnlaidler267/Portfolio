@@ -15,7 +15,7 @@ div {
 }
 
 * {
-  font-family: 'Sunset Gothic', sans-serif;
+  font-family: 'Sunset Gothic', sans-serif, 'Courier New', Courier, monospace;
 }
 
 .card-text  {
