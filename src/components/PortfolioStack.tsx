@@ -16,11 +16,23 @@ import YouTube from "../images/YouTube.png";
 
 const PortfolioStack = () => {
     return (
-        <div className='portfolio-bg'>
+        <div className='portfolio-bg' id='portfolio'>
 
-            <Row>
-                <Col>
-                    <Card className='service-card' bsPrefix='customCard'>
+            <Container style={{ width: '100%', maxWidth: '90%' }}>
+
+
+                <div className='portfolio-grid'>
+
+                    <div className='title-div revealUp'>
+                        <span>View My</span>
+                        <div className="message">
+                            <div className="word1">Coding Projects</div>
+                            <div className="word2">Music and Videos</div>
+                            <div className="word3">Self-Development</div>
+                        </div>
+                    </div>
+
+                    <Card className='service-card github revealUp' bsPrefix='customCard'>
                         <Card.Body>
                             <Row>
                                 <Col sm={4}>
@@ -32,16 +44,14 @@ const PortfolioStack = () => {
                                         <Card.Text>
                                             See my all programming projects.
                                         </Card.Text>
-                                        <Button href='https://github.com/johnlaidler267' target='_blank'>View GitHub</Button>
+                                        <Button className='service-btn' href='https://github.com/johnlaidler267' target='_blank'><span>View GitHub</span></Button>
                                     </div>
                                 </Col>
                             </Row>
                         </Card.Body>
                     </Card>
-                </Col>
 
-                <Col>
-                    <Card className='service-card' bsPrefix='customCard'>
+                    <Card className='service-card youtube revealUp' bsPrefix='customCard'>
                         <Card.Body>
                             <Row>
                                 <Col sm={4}>
@@ -53,18 +63,14 @@ const PortfolioStack = () => {
                                         <Card.Text>
                                             Watch my tutorials and vlogs.
                                         </Card.Text>
-                                        <Button>View YouTube</Button>
+                                        <Button className='service-btn' href='https://www.youtube.com/@johnnylaidler' target='_blank'><span>View YouTube</span></Button>
                                     </div>
                                 </Col>
                             </Row>
                         </Card.Body>
                     </Card>
-                </Col>
-            </Row>
 
-            <Row>
-                <Col>
-                    <Card className='service-card' bsPrefix='customCard'>
+                    <Card className='service-card spotify revealUp' bsPrefix='customCard'>
                         <Card.Body>
                             <Row>
                                 <Col sm={4}>
@@ -76,16 +82,14 @@ const PortfolioStack = () => {
                                         <Card.Text>
                                             What I'm listening to right now.
                                         </Card.Text>
-                                        <Button>View Spotify</Button>
+                                        <Button className='service-btn' href='https://open.spotify.com/user/21ewz7rjuudewj2d345ioysqq' target='_blank'><span>View Spotify</span></Button>
                                     </div>
                                 </Col>
                             </Row>
                         </Card.Body>
                     </Card>
-                </Col>
 
-                <Col>
-                    <Card className='service-card' bsPrefix='customCard'>
+                    <Card className='service-card reading revealUp' bsPrefix='customCard'>
                         <Card.Body>
                             <Row>
                                 <Col sm={4}>
@@ -95,18 +99,19 @@ const PortfolioStack = () => {
                                     <div className='stack'>
                                         <Card.Title className='title'>Reading List</Card.Title>
                                         <Card.Text>
-                                            Check out what I'm reading these days.
+                                            Check out what I'm reading.
                                         </Card.Text>
-                                        <Button>View My Reading List</Button>
+                                        <Button className='service-btn'><span>View Reading</span></Button>
                                     </div>
                                 </Col>
                             </Row>
                         </Card.Body>
                     </Card>
-                </Col>
-            </Row>
 
-        </div>
+                </div>
+            </Container>
+
+        </div >
     );
 };
 

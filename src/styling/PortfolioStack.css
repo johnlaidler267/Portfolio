@@ -1,55 +1,233 @@
-/* This is a a service card (e.g. YouTube) */
+.container {
+    width: 100% !important;
+}
+
+.service-btn {
+    border: none !important;
+    display: block !important;
+    text-align: center !important;
+    cursor: pointer !important;
+    text-transform: uppercase !important;
+    outline: none !important;
+    overflow: hidden !important;
+    position: relative !important;
+    color: #fff !important;
+    font-weight: 700 !important;
+    font-size: 15px !important;
+    background-color: #222 !important;
+    padding: 17px 60px !important;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.20) !important;
+}
+.service-btn span {
+    position: relative !important; 
+    z-index: 1 !important ;
+}
+
+.service-btn:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 490%;
+    width: 140%;
+    background: #acb2b3;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+    transform: translateX(-98%) translateY(-25%) rotate(45deg);
+}
+
+.service-btn:hover:after {
+    -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+    transform: translateX(-9%) translateY(-25%) rotate(45deg);
+}
+
+/* This is a service card (e.g. YouTube) */
 .service-card {
-    background-color: aliceblue;
-    margin: 1rem;
-    padding: 1rem;
-    width: 98%;
-}
+    background-color: black; /* Background color for the service card. */
+    color: white;
+    margin: 1rem; /* Margin around the service card. */
+    padding: 2rem; /* Padding inside the service card. */
+    width: 98%; /* Set the width of the service card to 98%. */
+    height: 20vw;
+    border-radius: 1rem; /* Rounded corners for the service card. */
+    opacity: 0.95; /* Set the opacity of the service card to 95%. */
 
-/* Text column within service card */
-.service-card .col-sm-8 {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-/* Image column within service card */
-.service-card .col-sm-4 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Actual text within text column within service card */
-.stack {
-    display: flex;
-    flex-direction: column;
-}
-
-/* Bakground for the whole stack */
-.portfolio-bg {
-    background-color: #736c56;
-    opacity: 0.8;
-    padding: 1.5rem;
-}
-
-/* Button Styling */
-.btn-primary {
-    --bs-btn-bg: black !important;
-    --bs-btn-bg-hover: black !important;
-    --bs-btn-bg-active: black !important;
-    --bs-btn-border: black !important;
-    --bs-btn-border-hover: black !important;
-    --bs-btn-border-active: black !important;
-    --bs-btn-color: white;
 }
 
 /* Header Styling (e.g. GitHub) */
 .h5 {
-    font-weight: bold !important;
+    font-weight: bold !important; /* Set the font weight to bold for the header (h5) element. */
 }
 
+/* Text column within service card */
+.service-card .col-sm-8 {
+    display: flex; /* Use flexbox for layout within the text column. */
+    justify-content: center; /* Center content horizontally within the column. */
+    align-items: center; /* Center content vertically within the column. */
+}
+
+/* Image within the service card */
 .service-image {
+    width: 30vw !important; /* Set the width of the image to 30% of the viewport width. */
+    max-width: 100%; /* Set the maximum width of the image to 100% of its container. */
+    border-radius: 1rem !important; /* Rounded corners for the image. */
+    padding: .2rem; /* Padding around the image. */
+}
+
+/* Actual text within text column within service card */
+.stack {
+    display: flex; /* Use flexbox for layout within the text stack. */
+    flex-direction: column; /* Stack text elements vertically. */
+}
+
+/* Background for the whole stack */
+.portfolio-bg {
+    background-color: #736c56; /* Background color for the portfolio background. */
+    opacity: 0.8; /* Set the opacity of the portfolio background to 80%. */
+    padding: 1.5rem; /* Padding inside the portfolio background. */
+    height: 100vh; /* Set the height of the portfolio background to 100% of the viewport height. */
+    display: grid;
+    align-content: center;
+}
+
+/* Button Styling */
+/* Button Styling - Primary */
+.btn-primary {
+    --bs-btn-bg: white !important; /* Set the background color for the primary button. */
+    --bs-btn-bg-hover: black !important; /* Set the background color on hover for the primary button. */
+    --bs-btn-bg-active: black !important; /* Set the background color when active for the primary button. */
+    --bs-btn-border-color: none !important; /* Set the border color for the primary button. */
+    --bs-btn-border-hover: black !important; /* Set the border color on hover for the primary button. */
+    --bs-btn-border-active: black !important; /* Set the border color when active for the primary button. */
+    --bs-btn-color: black !important; /* Set the font color for the primary button. */
+}
+
+.portfolio-grid {
+    display: grid; /* Use grid layout for the portfolio background. */
+    grid-template-rows: auto auto auto; /* Define two rows with equal height. */
+    grid-template-columns: auto auto; /* Define two columns with equal width. */
+    align-content: center;
+    justify-items: center;
+}
+
+.github {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.youtube {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.spotify {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.reading {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+/* TITLE */
+
+
+/* Styling for the div that the title is in */
+.title-div {
+    overflow: hidden;
+    border-left: 6px dotted white;
+    color: white;
+    left: 1rem;
+    font-size: 2rem !important;
+    font-weight: 100 !important;
+    line-height: 1.5;
+    white-space: nowrap;
     position: relative;
-    right: -30px;
+    justify-self: start;
+    width: 100%;
+}
+
+.title-div span {
+    font-size: 2rem;
+    margin-left: 10px;
+    height: 100%;
+}
+
+.message {
+    background-color: #222;
+    color: rgb(255, 255, 255);
+    display: block;
+    font-weight: 900;
+    overflow: hidden;
+    position: absolute;
+    padding-left: 0.5rem;
+    top: 0.2rem;
+    left: 9.5rem;
+    animation: openclose 8s ease-in-out infinite;
+}
+
+@keyframes openclose {
+    0% {
+        top: 0rem;
+        width: 0;
+    }
+    5% {
+        width: 0;
+    }
+    15% {
+        width: 16rem;
+    }
+    30% {
+        top: 0.2rem;
+        width: 16rem;
+    }
+    33% {
+        top: 0.2rem;
+        width: 0;
+    }
+    35% {
+        top: -3rem;
+        width: 0;
+    }
+    38% {
+        top: -3rem;
+    }
+    48% {
+        top: -3rem;
+        width: 18rem;
+    }
+    62% {
+        top: -3rem;
+        width: 18rem;
+    }
+    66% {
+        top: -3rem;
+        width: 0;
+        text-indent: 0;
+    }
+    71% {
+        top: -5.9rem;
+        width: 0;
+    }
+    86% {
+        top: -5.9rem;
+        width: 18rem;
+    }
+    95% {
+        top: -5.9rem;
+        width: 18rem;
+    }
+    98% {
+        top: -5.9rem;
+        width: 0;
+    }
+    100% {
+        top: 0;
+        width: 0;
+    }
 }

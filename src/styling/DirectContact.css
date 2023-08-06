@@ -1,10 +1,126 @@
 .direct-contact-div {
     padding: 2rem;
     color: white;
-    width: 50%;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .direct-contact-bg {
     background-color: black;
     opacity: 0.75;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px dashed white;
+    height: 80vh;
 }
+
+.my-email {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    border-top: 2px solid white;
+    margin-top: 1rem;
+}
+
+/* SEND BUTTON */
+  
+.send-btn {
+    /* Set margin */
+    margin: 1rem !important;
+    width: 50% !important;
+  }
+  
+  /* Apply styles to anchor ('a') elements */
+  .send-btn {
+    /* Set padding */
+    padding: .5rem!important;
+    /* Remove border */
+    border: 0 !important;
+    background-color: #222 !important;
+    padding: 17px 60px !important;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.20) !important;
+    /* Set text color */
+    color: white !important;
+    /* Convert text to uppercase */
+    text-transform: uppercase !important;
+    /* Set font size */
+    font-size: 1rem !important;
+    /* Set position to relative */
+    position: relative !important;
+    /* Apply transition effect */
+    transition: all .4s cubic-bezier(0.645, 0.045, 0.355, 1) !important;
+    /* Set cursor to pointer */
+    cursor: pointer !important;
+    /* Display the element as a block */
+    display: block !important;
+  }
+  
+  .send-btn::after,
+  .send-btn::before {
+    /* Set content to an empty string */
+    content: "" !important;
+    /* Set position to absolute */
+    position: absolute !important;
+    /* Set top to 50% */
+    top: 50% !important;
+    /* Set right to 0px */
+    right: 0px !important;
+    /* Translate along the Y-axis */
+    transform: translateY(-50%) !important;
+    /* Set opacity to 0 */
+    opacity: 0 !important;
+    /* Apply transition effect */
+    transition: all .4s cubic-bezier(0.645, 0.045, 0.355, 1) !important;
+  }
+  
+  .send-btn::after {
+    /* Set width */
+    width: 30px !important;
+    /* Set height */
+    height: 1px !important;
+    /* Set background color */
+    background: rgb(0, 0, 0) !important;
+    /* Translate along the X-axis */
+    transform: translateX(-3px) !important;
+    /* Set margin top */
+    margin-top: 0px !important;
+  }
+  
+  .send-btn::before {
+    /* Set content to an empty string */
+    content: "" !important;
+    /* Rotate and translate along the X-axis */
+    transform: rotate(-135deg) translateX(50%) !important;
+    /* Set width */
+    width: 11px !important;
+    /* Set height */
+    height: 11px !important;
+    /* Set background color to transparent */
+    background: transparent !important;
+    /* Add left border */
+    border-left: 1px solid rgb(0, 0, 0) !important;
+    /* Add bottom border */
+    border-bottom: 1px solid rgb(0, 0, 0) !important;
+    /* Set margin top */
+    margin-top: -1px !important;
+  }
+  
+  .send-btn:hover {
+    /* Adjust padding on hover */
+    padding: 17px 60px !important;
+    background-color: silver !important;
+    color: black !important;
+  }
+  
+  .send-btn:hover::after,
+  .send-btn:hover::before {
+    /* Set opacity to 1 on hover */
+    opacity: 1 !important;
+    /* Adjust right position on hover */
+    right: 15px !important;
+  }
+  

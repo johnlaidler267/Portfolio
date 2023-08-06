@@ -1,27 +1,64 @@
 /* Background div for the about me section */
 .abtme-bg {
-    background-image: radial-gradient(#ffffff 0.5px, rgb(181, 161, 137) 0.5px);
+    background-image: radial-gradient(#ffffff 0.5px, rgb(181, 161, 137) 0.5px) !important;
     background-size: 10px 10px;
-    color: white;
+    height: 75vh;
+
     padding: 3rem;
     text-align: center;
     border: none;
     display: flex;
     justify-content: center;
+    align-items: center; /* Add this line to vertically center the card */
 }
 
 /* Card w/ the abt me text&image */
 .abtme-card {
-    border: 0.2rem solid black;
-    background-color: aliceblue;
-    color: black;
+    border: 0.2rem solid white;
+    background-color: black;
+    opacity: 0.7 !important;
+    color: white;
     padding: 1rem;
-    width: 90%;
+    box-shadow: black 1rem 1rem 1rem;
+    border-radius: 1rem;
+    width: 75vw;
 }
+
+.card-text {
+    margin-bottom: 0px !important;
+}
+
+.abtme-title {
+    animation: shudder 2s ease infinite;
+}
+
+@keyframes shudder {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-10px);
+    }
+    50% {
+      transform: translateX(10px);
+    }
+    75% {
+      transform: translateX(-5px);
+    }
+    100% {
+      transform: translateX(5px);
+    }
+  }
+  
 
 /* Card that acts as a shadow to the about me card (above) */
 .shadow-card {
-    z-index: 0;
-    width:52%;
-    border: 0.2rem solid red;
+    width: 90%;
+    height: 22rem !important;
+    padding: 1rem;
+}
+
+/* Image within the about me card */
+.abtme-img {
+    border-radius: 50%;
 }
