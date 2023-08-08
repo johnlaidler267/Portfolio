@@ -1,107 +1,105 @@
-/* Styles for the name at the top of the page */
-.name {
-    font-size: 4.5rem !important;
-    font-weight: bold !important;
-    z-index: 2 !important;
-    position: relative;
-    width: fit-content;
-  }
+@import url("./Animations.css");
 
-.name::before {  
-    transform: scaleX(0) !important;
-    transform-origin: bottom right !important;
+/*=============================================
+=                 Header (Bg)                 =
+=============================================*/
+
+/* Styles for the background div of the header (name/contact) */
+#header-bg {
+  height: 100vh; /* Full height of the viewport */
+  width: 100vw; /* Full width of the viewport */
+
+  background: linear-gradient(-45deg, #000000, #302f25, #47483e, bisque);
+  background-size: 400% 400%;
+  border-bottom: 0.2rem solid white;
+  color: white;
+  padding: 4rem;
+  opacity: 0.8;
+  animation: gradient 15s ease infinite;
+
+  /* Center the card */
+  display: flex;
+  justify-content: center; /* Horizontally centers content */
+  align-items: center; /* Vertically centers content */
+  text-align: center; /* Horizontally centers text */
 }
 
-.name:hover::before {
-    transform: scaleX(1) !important;
-    transform-origin: bottom left !important;
+/* Styles for the card that contains the header text */
+#header-card {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  padding: 1rem;
+}
+
+/*=============================================
+=           Name (Website Header Text)       =
+=============================================*/
+
+.name {
+  font-size: max(6vw, 2.7rem) !important;
+  font-weight: bold !important;
+  z-index: 2 !important;
+  position: relative;
+  width: fit-content;
 }
 
 .name::before {
-    content: " " !important;
-    position: absolute !important;
-    top: 0; right: 0; bottom: 0; left: 0 !important;
-    background: rgb(24, 77, 157) !important;
-    z-index: -1 !important;
-    transition: transform .3s ease !important;
+  transform: scaleX(0) !important;
+  transform-origin: bottom right !important;
 }
 
-  /* Styles for the background div of the header (name/contact) */
-  .header-bg {
-    background: linear-gradient(-45deg, #000000,#302F25, #47483E, bisque);
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
-    border-bottom: 0.2rem solid white;
-    color: white;
-    display: flex;
-    justify-content: center; /* Horizontally centers the content */
-    align-items: center; /* Vertically centers the content */
-    text-align: center;
-    height: 100vh; /* Full height of the viewport */
-    width: 100vw; /* Full width of the viewport */
-    padding: 4rem;
-    opacity: 0.8;
-  }
-  
-  /* Styles for the card that contains the header text */
-  .header-card {
-    width: 100%;
-    background-color: transparent;
-    border: none;
-    padding: 1rem;
-  }
-  
-  @keyframes gradient {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
-  
-  /* Arrow styling */
-  .arrow {
-    position: absolute;
-    top: 85% !important;
-    left: 50%;
-    transform: translate(0%, 0%) !important;
-    transform: rotate(90deg);
-    cursor: pointer;
+.name:hover::before {
+  transform: scaleX(1) !important;
+  transform-origin: bottom left !important;
+}
+
+.name::before {
+  content: " " !important;
+  position: absolute !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0 !important;
+  background: rgb(24, 77, 157) !important;
+  z-index: -1 !important;
+  transition: transform 0.3s ease !important;
+}
+
+#header-description {
+  font-style: italic;
+  font-size: max(1.5vw, 0.8rem);
+  color: silver;
+}
+
+/*=============================================
+=           Scroll-Down Arrow                 =
+=============================================*/
+
+/* Arrow styling */
+.arrow {
+  position: absolute;
+  top: 85% !important;
+  left: 50%;
+  transform: translate(0%, 0%) !important;
+  transform: rotate(90deg);
+  cursor: pointer;
 }
 
 .arrow span {
-    display: block;
-    width: 1vw;
-    height: 1vw;
-    border-bottom: 5px solid white;
-    border-right: 5px solid white;
-    transform: rotate(45deg);
-    margin: -10px;
-    animation: animate 2s infinite;
+  display: block;
+  width: 1vw;
+  height: 1vw;
+  border-bottom: 5px solid white;
+  border-right: 5px solid white;
+  margin: -10px; /* margin in between arrows */
+  animation: slideDown 3s infinite;
 }
 
 .arrow span:nth-child(2) {
-    animation-delay: -0.2s;
+  animation-delay: -0.2s;
 }
 
 .arrow span:nth-child(3) {
-    animation-delay: -0.4s;
-}
-
-@keyframes animate {
-    0% {
-        opacity: 0;
-        transform: rotate(45deg) translate(-20px, -20px);
-    }
-    50% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-        transform: rotate(45deg) translate(20px, 20px);
-    }
+  animation-delay: -0.4s;
 }

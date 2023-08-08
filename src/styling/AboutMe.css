@@ -1,64 +1,81 @@
-/* Background div for the about me section */
-.abtme-bg {
-    background-image: radial-gradient(#ffffff 0.5px, rgb(181, 161, 137) 0.5px) !important;
-    background-size: 10px 10px;
-    height: 75vh;
+@import url("./Animations.css");
 
-    padding: 3rem;
-    text-align: center;
-    border: none;
-    display: flex;
-    justify-content: center;
-    align-items: center; /* Add this line to vertically center the card */
+/*=============================================
+=             Section  Background             =
+=============================================*/
+
+#abtme-bg {
+  /* Background gradient */
+  background-image: radial-gradient(#ffffff 0.5px, rgb(200, 178, 154) 0.5px);
+  background-size: max(10px, 5px) 10px;
+  height: 80vh;
+  width: 100vw;
+  padding: 8rem;
+  text-align: center;
+  border: none;
+
+  /* Center the card within the bg */
+  display: flex;
+  justify-content: center; /* centers the card horizontally (flex) */
+  align-items: center; /* centers the card vertically (flex) */
 }
 
-/* Card w/ the abt me text&image */
-.abtme-card {
-    border: 0.2rem solid white;
-    background-color: black;
-    opacity: 0.7 !important;
-    color: white;
-    padding: 1rem;
-    box-shadow: black 1rem 1rem 1rem;
-    border-radius: 1rem;
-    width: 100%;
-}
+/*=============================================
+=                'About Me' Card              =
+=============================================*/
 
-.card-text {
-    margin-bottom: 0px !important;
-}
+/* Actual card itself */
+#abtme-card {
+  background-color: transparent;
+  opacity: 0.7 !important;
+  color: black;
 
-.abtme-title {
-    animation: shudder 2s ease infinite;
-}
+  padding: 1rem;
+  width: 85vw;
+  height: 80vh;
+  font-size: 1.3vw;
+  text-align: left;
 
-@keyframes shudder {
-    0% {
-      transform: translateX(0);
-    }
-    25% {
-      transform: translateX(-10px);
-    }
-    50% {
-      transform: translateX(10px);
-    }
-    75% {
-      transform: translateX(-5px);
-    }
-    100% {
-      transform: translateX(5px);
-    }
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Set a specific width for smaller viewports using a media query */
+  @media (max-width: 1200px) {
+    width: 80%; /* Set a specific width for smaller viewports */
+    font-size: 0.75rem;
   }
-  
-
-/* Card that acts as a shadow to the about me card (above) */
-.shadow-card {
-    width: 90%;
-    height: 22rem !important;
-    padding: 1rem;
 }
 
-/* Image within the about me card */
-.abtme-img {
-    border-radius: 50%;
+/* Title within the About Me Card */
+#abtme-title {
+  padding-bottom: 0px !important;
+  /* animation: shudder 4s ease infinite; */
+  font-size: max(4vw, 1.5rem);
+  font-weight: 600;
+  color: rgb(105, 35, 35);
+}
+
+/*=============================================
+=           Profile Image Card                =
+=============================================*/
+
+/* Div that wraps my profile image */
+#abtme-img-square-div {
+  position: absolute;
+  max-width: 350px;
+  max-height: 350px;
+  width: auto;
+  height: auto;
+  overflow: hidden; /* Hides the cropped part of the image */
+  border-radius: 50%;
+  box-shadow: 0.4rem 0.4rem black;
+}
+
+/* Actual Profile Image */
+#abtme-img {
+  /* Center my face within the img-div */
+  width: 100%;
+  transform: translate(0%, -10%);
 }

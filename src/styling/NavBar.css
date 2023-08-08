@@ -1,40 +1,41 @@
 /* Styles for the navbar */
 .navbar {
-    padding: 1rem 2rem !important; /* Adjust the padding as needed */
+  padding: 1rem 2rem !important; /* Adjust the padding as needed */
 }
 
 /* Styles for the left side of the navbar (brand) */
 .navbar-left {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
-  /* Styles for the right side of the navbar (navigation links) */
+/* Styles for the right side of the navbar (navigation links) */
 .navbar-right {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
 }
 
-  /* Styles for the blurred navbar background */
+/* Styles for the blurred navbar background */
 .navbar-blur {
-    background: transparent;
-    backdrop-filter: blur(10px);
+  background: transparent;
+  backdrop-filter: blur(10px);
 }
 
 /* Styles for the brand/logo */
 .navbar-brand {
-    font-size: 1.2rem !important; /* Adjust the font size as needed */
-    font-weight: bold !important;
-    color: white !important;
+  font-size: 1.7rem !important; /* Adjust the font size as needed */
+  font-weight: bold !important;
+  color: white !important;
+  font-family: "Meow Script";
 }
 
 /* Styles for the navigation links */
 .navbar-nav .nav-link {
-    font-size: 1rem; /* Adjust the font size as needed */
-    margin-right: 1rem; /* Adjust the spacing between links */
-    color: white; /* Link text color */
-    text-decoration: none; /* Remove underline from links */
+  font-size: 1rem; /* Adjust the font size as needed */
+  margin-right: 1rem; /* Adjust the spacing between links */
+  color: white; /* Link text color */
+  text-decoration: none; /* Remove underline from links */
 }
 
 /* Styles for the active link (if needed) */
@@ -43,25 +44,25 @@
 
 /* Styles for the collapsed navbar (mobile view) */
 .navbar-toggler-icon {
-    background-color: white; /* Color for the hamburger icon */
+  background-color: white; /* Color for the hamburger icon */
 }
 
 /* Styles for the toggler button text (optional) */
 .navbar-toggler {
-    border-color: white; /* Color for the toggler button */
+  border-color: white; /* Color for the toggler button */
 }
 
-  /* Media query for smaller screens, adjust as needed */
+/* Media query for smaller screens, adjust as needed */
 @media (max-width: 768px) {
-.navbar {
-      padding: 0.5rem 1rem; /* Adjust the padding for smaller screens */
-    }
+  .navbar {
+    padding: 0.5rem 1rem; /* Adjust the padding for smaller screens */
+  }
 
-    .navbar-brand {
-      font-size: 1.2rem; /* Adjust the font size for smaller screens */
-    }
+  .navbar-brand {
+    font-size: 1.2rem; /* Adjust the font size for smaller screens */
+  }
 
-    .navbar-nav .nav-link {
-      font-size: 1rem; /* Adjust the font size for smaller screens */
-    }
+  .navbar-nav .nav-link {
+    font-size: 1rem; /* Adjust the font size for smaller screens */
+  }
 }

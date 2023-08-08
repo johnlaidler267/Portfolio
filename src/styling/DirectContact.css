@@ -1,126 +1,102 @@
+@import url("./Animations.css");
+
+/*=============================================
+=                  Background                 =
+=============================================*/
+
 .direct-contact-div {
-    padding: 2rem;
-    color: white;
-    width: 55%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  /* Center the stuff inside the form */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+  padding: 2rem;
+  width: max(55vw, 25rem);
 }
 
 .direct-contact-bg {
-    background-color: black;
-    opacity: 0.75;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-top: 2px dashed white;
-    height: 80vh;
+  /* Center the form in the center of the bg */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: black;
+  border-top: 2px dashed white;
+  height: 80vh;
+  opacity: 0.75;
 }
+
+/*=============================================
+=                 Form Components             =
+=============================================*/
+
+/*----------  Div displaying my email (below form)   ----------*/
 
 .my-email {
-    display: flex;
-    justify-content: center;
-    padding-top: 1rem;
-    border-top: 2px solid white;
-    margin-top: 1rem;
+  border-top: 2px solid white;
+  margin-top: 1rem;
+  padding-top: 1rem;
 }
 
-/* SEND BUTTON */
-  
+/*----------  Button to submit form (send email) ----------*/
+
 .send-btn {
-    /* Set margin */
-    margin: 1rem !important;
-    width: 50% !important;
-  }
-  
-  /* Apply styles to anchor ('a') elements */
-  .send-btn {
-    /* Set padding */
-    padding: .5rem!important;
-    /* Remove border */
-    border: 0 !important;
-    background-color: #222 !important;
-    padding: 17px 60px !important;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.20) !important;
-    /* Set text color */
-    color: white !important;
-    /* Convert text to uppercase */
-    text-transform: uppercase !important;
-    /* Set font size */
-    font-size: 1rem !important;
-    /* Set position to relative */
-    position: relative !important;
-    /* Apply transition effect */
-    transition: all .4s cubic-bezier(0.645, 0.045, 0.355, 1) !important;
-    /* Set cursor to pointer */
-    cursor: pointer !important;
-    /* Display the element as a block */
-    display: block !important;
-  }
-  
-  .send-btn::after,
-  .send-btn::before {
-    /* Set content to an empty string */
-    content: "" !important;
-    /* Set position to absolute */
-    position: absolute !important;
-    /* Set top to 50% */
-    top: 50% !important;
-    /* Set right to 0px */
-    right: 0px !important;
-    /* Translate along the Y-axis */
-    transform: translateY(-50%) !important;
-    /* Set opacity to 0 */
-    opacity: 0 !important;
-    /* Apply transition effect */
-    transition: all .4s cubic-bezier(0.645, 0.045, 0.355, 1) !important;
-  }
-  
-  .send-btn::after {
-    /* Set width */
-    width: 30px !important;
-    /* Set height */
-    height: 1px !important;
-    /* Set background color */
-    background: rgb(0, 0, 0) !important;
-    /* Translate along the X-axis */
-    transform: translateX(-3px) !important;
-    /* Set margin top */
-    margin-top: 0px !important;
-  }
-  
-  .send-btn::before {
-    /* Set content to an empty string */
-    content: "" !important;
-    /* Rotate and translate along the X-axis */
-    transform: rotate(-135deg) translateX(50%) !important;
-    /* Set width */
-    width: 11px !important;
-    /* Set height */
-    height: 11px !important;
-    /* Set background color to transparent */
-    background: transparent !important;
-    /* Add left border */
-    border-left: 1px solid rgb(0, 0, 0) !important;
-    /* Add bottom border */
-    border-bottom: 1px solid rgb(0, 0, 0) !important;
-    /* Set margin top */
-    margin-top: -1px !important;
-  }
-  
-  .send-btn:hover {
-    /* Adjust padding on hover */
-    padding: 17px 60px !important;
-    background-color: silver !important;
-    color: black !important;
-  }
-  
-  .send-btn:hover::after,
-  .send-btn:hover::before {
-    /* Set opacity to 1 on hover */
-    opacity: 1 !important;
-    /* Adjust right position on hover */
-    right: 15px !important;
-  }
-  
+  background-color: #222 !important;
+  border: 0 !important;
+  color: white !important;
+  cursor: pointer !important;
+  font-size: 1rem !important;
+  padding: 1rem !important;
+  position: relative !important;
+  text-transform: uppercase !important;
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1) !important;
+  margin: 1rem !important;
+  width: 50% !important;
+}
+
+.send-btn::after,
+.send-btn::before {
+  content: "" !important;
+  opacity: 0 !important;
+  position: absolute !important;
+  right: 0px !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1) !important;
+}
+
+/* creates the arrow shape (>) */
+.send-btn::before {
+  background: transparent !important;
+  border-bottom: 1px solid rgb(0, 0, 0) !important;
+  border-left: 1px solid rgb(0, 0, 0) !important;
+  content: "" !important;
+  height: 11px !important;
+  margin-top: -1px !important;
+  transform: rotate(-135deg) translateX(50%) !important;
+  width: 11px !important;
+}
+
+/* creates horizontal line to complete arrow (->) */
+.send-btn::after {
+  background: rgb(0, 0, 0) !important;
+  height: 1px !important;
+  margin-top: 0px !important;
+  transform: translateX(-3px) !important;
+  width: 30px !important;
+}
+
+.send-btn:hover {
+  background-color: silver !important;
+  color: black !important;
+  padding: 1rem !important;
+}
+
+/* creates animation where the pseudo-elements slide to the right, revealing the arrow shape and enhancing the button's appearance. */
+.send-btn:hover::after,
+.send-btn:hover::before {
+  opacity: 1 !important;
+  right: 15px !important;
+}

@@ -1,33 +1,29 @@
+@import url("./Animations.css");
+
 .contact-card {
-    align-items: center;
-    background-color: black;
+  align-items: center;
 }
 
-.contact-div {
-    display: flex;
-    justify-content: center;
+#contact-div {
+  display: flex;
+  justify-content: center;
 }
 
 .contact-btn {
-    padding: 1rem !important;
-    margin: 1rem !important;
-    animation: float 6s ease-in-out infinite;
-    box-shadow: 0 5px 15px 0px rgba(56, 101, 62, 0.95) !important;
-    transform: translatey(0px);
+  /* center the image within the button */
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  animation: float 6s ease-in-out infinite;
+  box-shadow: 0 5px 15px 0px rgba(29, 10, 10, 0.95) !important;
+  border-radius: 50% !important;
+  margin: 1rem !important;
+  padding: 1rem !important;
+  width: max(5vw, 3rem);
+  height: max(5vw, 3rem);
 }
 
-@keyframes float {
-    0% {
-      box-shadow: 0 5px 15px 0px rgba(56, 101, 62, 0.95);
-      transform: translatey(0px);
-    }
-    50% {
-      box-shadow: 0 25px 15px 0px rgba(56, 101, 62, 0.97);
-      transform: translatey(-20px);
-    }
-    100% {
-      box-shadow: 0 5px 15px 0px rgba(56, 101, 62, 1.2);
-      transform: translatey(0px);
-    }
-  }
-  
+.contact-btn-image {
+  width: max(2vw, 1rem);
+}

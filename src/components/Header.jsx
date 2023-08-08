@@ -1,38 +1,43 @@
 // Style Sheets
-import '../styling/Header.css'
+import "../styling/Header.css";
 
 //React
-import React from 'react';
+import React from "react";
 
 //React Components
 import { Card } from "react-bootstrap";
 
 //Custom Components
-import Contact from './Contact';
+import Contact from "./Contact";
 
 // Header component: Contains my name/conctact info
 const Header = () => {
-    return (
-        <div className='header-bg'>
-            <div className="arrow">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+  return (
+    <div id="header-bg">
+      <a className="arrow" href="#abtme-bg">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
 
-            <div>
-                <Card className='header-card' bsPrefix='customCard'>
-                    <Card.Body>
-                        <div className='justify-content-center'>
-                            <Card.Title className='name'> &lt;John Laidler /&gt;</Card.Title>
-                        </div>
-                        <p style={{ fontSize: '1.2rem', fontStyle: 'italic' }}>A collection of all my creative pursuits.</p>
-                        <Contact />
-                    </Card.Body>
-                </Card>
+      <div>
+        <Card id="header-card" bsPrefix="customCard">
+          <Card.Body>
+            <div className="justify-content-center">
+              <Card.Title className="name revealUp">
+                {" "}
+                &lt;John Laidler /&gt;
+              </Card.Title>
             </div>
-        </div>
-    );
+            <p className="revealUp" id="header-description">
+              A collection of creative & academic pursuits.
+            </p>
+            <Contact />
+          </Card.Body>
+        </Card>
+      </div>
+    </div>
+  );
 };
 
 export default Header;

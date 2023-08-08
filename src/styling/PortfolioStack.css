@@ -1,233 +1,258 @@
+/* Styles for a container element */
 .container {
-    width: 100% !important;
+  width: 100% !important; /* Set the container's width to 100% and override any other styles */
 }
 
-.service-btn {
-    border: none !important;
-    display: block !important;
-    text-align: center !important;
-    cursor: pointer !important;
-    text-transform: uppercase !important;
-    outline: none !important;
-    overflow: hidden !important;
-    position: relative !important;
-    color: #fff !important;
-    font-weight: 700 !important;
-    font-size: 15px !important;
-    background-color: #222 !important;
-    padding: 17px 60px !important;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.20) !important;
-}
-.service-btn span {
-    position: relative !important; 
-    z-index: 1 !important ;
-}
+/*=============================================
+=                  Background                 =
+=============================================*/
 
-.service-btn:after {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 490%;
-    width: 140%;
-    background: #acb2b3;
-    -webkit-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
-    -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
-    transform: translateX(-98%) translateY(-25%) rotate(45deg);
-}
-
-.service-btn:hover:after {
-    -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
-    transform: translateX(-9%) translateY(-25%) rotate(45deg);
-}
-
-/* This is a service card (e.g. YouTube) */
-.service-card {
-    background-color: black; /* Background color for the service card. */
-    color: white;
-    margin: 1rem; /* Margin around the service card. */
-    padding: 2rem; /* Padding inside the service card. */
-    width: 98%; /* Set the width of the service card to 98%. */
-    height: 20vw;
-    border-radius: 1rem; /* Rounded corners for the service card. */
-    opacity: 0.95; /* Set the opacity of the service card to 95%. */
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Header Styling (e.g. GitHub) */
-.h5 {
-    font-weight: bold !important; /* Set the font weight to bold for the header (h5) element. */
-}
-
-/* Text column within service card */
-.service-card .col-sm-8 {
-    display: flex; /* Use flexbox for layout within the text column. */
-    justify-content: center; /* Center content horizontally within the column. */
-    align-items: center; /* Center content vertically within the column. */
-}
-
-/* Image within the service card */
-.service-image {
-    width: 30vw !important; /* Set the width of the image to 30% of the viewport width. */
-    max-width: 100%; /* Set the maximum width of the image to 100% of its container. */
-    border-radius: 1rem !important; /* Rounded corners for the image. */
-    padding: .2rem; /* Padding around the image. */
-}
-
-/* Actual text within text column within service card */
-.stack {
-    display: flex; /* Use flexbox for layout within the text stack. */
-    flex-direction: column; /* Stack text elements vertically. */
-}
-
-/* Background for the whole stack */
+/* Styles for the background of the portfolio section */
 .portfolio-bg {
-    background-color: #736c56; /* Background color for the portfolio background. */
-    opacity: 0.8; /* Set the opacity of the portfolio background to 80%. */
-    padding: 1.5rem; /* Padding inside the portfolio background. */
-    height: 100vh; /* Set the height of the portfolio background to 100% of the viewport height. */
-    display: grid;
-    align-content: center;
+  /* Center the card grid */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh; /* Set the height of the portfolio section to 100% of the viewport height */
+  width: 100vw;
+
+  background-color: #736c56; /* Set the background color of the portfolio section to #736c56 */
+  opacity: 0.8; /* Set the opacity of the portfolio section to 0.8 */
+  padding: 3rem; /* Set a padding of 3rem inside the portfolio section */
 }
 
-/* Button Styling */
-/* Button Styling - Primary */
+/*=============================================
+=                 Service Cards               =
+=============================================*/
+
+/* Styles for service cards */
+.service-card {
+  align-items: center; /* Center-align the items inside the card */
+  background-color: black; /* Set the background color of the card to black */
+  border-radius: 1rem; /* Set the border radius of the card to 1rem (rounded corners) */
+  color: white; /* Set the text color to white */
+  display: flex; /* Display the card as a flex container */
+  height: 20vw; /* Set the height of the card to 20% of the viewport width */
+  justify-content: center; /* Center-align the content horizontally inside the card */
+  margin: 1rem; /* Set a margin of 1rem around the card */
+  opacity: 0.95; /* Set the opacity of the card to 0.95 */
+  padding: 2rem; /* Set the padding inside the card to 2rem */
+  width: 98%; /* Set the width of the card to 98% */
+}
+
+/* Styles for the content in the second column of service cards */
+.service-card .col-sm-8 {
+  align-items: center; /* Center-align the items inside the column */
+  display: flex; /* Display the column as a flex container */
+  justify-content: center; /* Center-align the content horizontally inside the column */
+}
+
+/* Styles for service images */
+.service-image {
+  border-radius: 1rem !important; /* Set the border radius of the image to 1rem and override any other styles */
+  max-width: 100%; /* Set the maximum width of the image to 100% */
+  padding: 0.2rem; /* Set a padding of 0.2rem around the image */
+  width: 30vw !important; /* Set the width of the image to 30% of the viewport width and override any other styles */
+}
+
+/* Styles for stacked elements */
+.stack {
+  display: flex; /* Display the elements as a flex container with stacked orientation (column) */
+  flex-direction: column; /* Set the flex direction to column for stacked layout */
+}
+
+/*=============================================
+=      Buttons that links to services         =
+=============================================*/
+
+/* Styles for service buttons */
+.service-btn {
+  background-color: #222 !important; /* Set the background color of the button to #222 and override any other styles */
+  border: none !important; /* Remove the border and override any other styles */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2) !important; /* Add a box shadow to the button and override any other styles */
+  color: #fff !important; /* Set the text color to white and override any other styles */
+  cursor: pointer !important; /* Set the cursor to a pointer (hand) and override any other styles */
+  display: block !important; /* Set the display property to block and override any other styles */
+  font-size: 15px !important; /* Set the font size to 15 pixels and override any other styles */
+  font-weight: 700 !important; /* Set the font weight to bold and override any other styles */
+  outline: none !important; /* Remove the outline when the button is focused and override any other styles */
+  overflow: hidden !important; /* Clip the button's content if it overflows and override any other styles */
+  padding: 17px 60px !important; /* Set the padding (top/bottom, left/right) to 17 pixels and 60 pixels respectively, and override any other styles */
+  position: relative !important; /* Set the position to relative and override any other styles */
+  text-align: center !important; /* Center-align the text inside the button and override any other styles */
+  text-transform: uppercase !important; /* Transform the text to uppercase and override any other styles */
+}
+
+/* Styles for the inner content of service buttons */
+.service-btn span {
+  position: relative !important; /* Set the position to relative for the inner content and override any other styles */
+  z-index: 1 !important; /* Set the z-index to 1 and override any other styles */
+}
+
+/* Styles for the animation effect on service buttons */
+.service-btn:after {
+  /* The following styles will create a diagonal overlay on the button */
+  -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg); /* Apply a transformation to create a diagonal overlay and rotate it 45 degrees for Webkit browsers */
+  -webkit-transition: all 0.5s ease-in-out; /* Apply a smooth transition effect for Webkit browsers */
+  background: #acb2b3; /* Set the backßground color for the diagonal overlay */
+  content: ""; /* Add an empty pseudo-element content */
+  height: 490%; /* Set the height of the diagonal overlay to 490% of the button's height */
+  left: 0; /* Position the overlay at the left edge of the button */
+  position: absolute; /* Position the overlay absolutely */
+  top: 0; /* Position the overlay at the top edge of the button */
+  transform: translateX(-98%) translateY(-25%) rotate(45deg); /* Apply a transformation to create a diagonal overlay and rotate it 45 degrees */
+  transition: all 0.5s ease-in-out; /* Apply a smooth transition effect */
+  width: 140%; /* Set the width of the diagonal overlay to 140% of the button's width */
+}
+
+/* Styles for the animation effect on service buttons when hovered */
+.service-btn:hover:after {
+  /* The following styles will adjust the position and rotation on hover */
+  -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg); /* Apply a transformation to adjust the position and rotation on hover for Webkit browsers */
+  transform: translateX(-9%) translateY(-25%) rotate(45deg); /* Apply a transformation to adjust the position and rotation on hover */
+}
+
+/* Styles for primary buttons */
 .btn-primary {
-    --bs-btn-bg: white !important; /* Set the background color for the primary button. */
-    --bs-btn-bg-hover: black !important; /* Set the background color on hover for the primary button. */
-    --bs-btn-bg-active: black !important; /* Set the background color when active for the primary button. */
-    --bs-btn-border-color: none !important; /* Set the border color for the primary button. */
-    --bs-btn-border-hover: black !important; /* Set the border color on hover for the primary button. */
-    --bs-btn-border-active: black !important; /* Set the border color when active for the primary button. */
-    --bs-btn-color: black !important; /* Set the font color for the primary button. */
+  /* The following styles will override Bootstrap's default button styles */
+  --bs-btn-bg-active: black !important; /* Set the active background color of the primary button to black and override any other styles */
+  --bs-btn-bg-hover: black !important; /* Set the background color of the primary button on hover to black and override any other styles */
+  --bs-btn-bg: white !important; /* Set the background color of the primary button to white and override any other styles */
+  --bs-btn-border-active: black !important; /* Set the active border color of the primary button to black and override any other styles */
+  --bs-btn-border-color: none !important; /* Remove the border color of the primary button and override any other styles */
+  --bs-btn-border-hover: black !important; /* Set the border color of the primary button on hover to black and override any other styles */
+  --bs-btn-color: black !important; /* Set the text color of the primary button to black and override any other styles */
 }
 
+/*=============================================
+=            Service Card Grid            =
+=============================================*/
+
+/* Styles for the grid layout in the portfolio section */
 .portfolio-grid {
-    display: grid; /* Use grid layout for the portfolio background. */
-    grid-template-rows: auto auto auto; /* Define two rows with equal height. */
-    grid-template-columns: auto auto; /* Define two columns with equal width. */
-    align-content: center;
-    justify-items: center;
+  align-content: center; /* Center-align the content inside the portfolio grid */
+  display: grid; /* Display the portfolio grid as a grid container */
+  grid-template-columns: auto auto; /* Set the grid columns to have automatic width */
+  grid-template-rows: auto auto auto; /* Set the grid rows to have automatic height */
+  justify-items: center; /* Center-align the items inside the grid horizontally */
 }
 
+/* Styles for specific portfolio items */
 .github {
-    grid-column: 1;
-    grid-row: 2;
+  grid-column: 1; /* Position the item in the first grid column */
+  grid-row: 2; /* Position the item in the second grid row */
 }
 
 .youtube {
-    grid-column: 1;
-    grid-row: 3;
+  grid-column: 1; /* Position the item in the first grid column */
+  grid-row: 3; /* Position the item in the third grid row */
 }
 
 .spotify {
-    grid-column: 2;
-    grid-row: 2;
+  grid-column: 2; /* Position the item in the second grid column */
+  grid-row: 2; /* Position the item in the second grid row */
 }
 
 .reading {
-    grid-column: 2;
-    grid-row: 3;
+  grid-column: 2; /* Position the item in the second grid column */
+  grid-row: 3; /* Position the item in the third grid row */
 }
 
-/* TITLE */
-
-
-/* Styling for the div that the title is in */
+/* Styles for the title divs */
 .title-div {
-    overflow: hidden;
-    border-left: 6px dotted white;
-    color: white;
-    left: 1rem;
-    font-size: 2rem !important;
-    font-weight: 100 !important;
-    line-height: 1.5;
-    white-space: nowrap;
-    position: relative;
-    justify-self: start;
-    width: 100%;
+  border-left: 6px dotted white; /* Set a left border with dotted style and white color for title divs */
+  color: white; /* Set the text color to white */
+  font-size: 2rem !important; /* Set the font size to 2rem and override any other styles */
+  font-weight: 100 !important; /* Set the font weight to 100 and override any other styles */
+  justify-self: start; /* Align the title divs to the start (left) of the grid cells */
+  left: 1rem; /* Set a left offset of 1rem */
+  line-height: 1.5; /* Set the line height to 1.5 */
+  overflow: hidden; /* Clip the content that overflows the title div */
+  position: relative; /* Set the position to relative */
+  white-space: nowrap; /* Prevent wrapping of the title div content */
+  width: 100%; /* Set the width to 100% */
 }
 
+/* Styles for the spans within title divs */
 .title-div span {
-    font-size: 2rem;
-    margin-left: 10px;
-    height: 100%;
+  font-size: 2rem; /* Set the font size of the spans to 2rem */
+  height: 100%; /* Set the height of the spans to 100% */
+  margin-left: 10px; /* Set a left margin of 10px */
+  
 }
 
+/* Styles for the animated message */
 .message {
-    background-color: #222;
-    color: rgb(255, 255, 255);
-    display: block;
-    font-weight: 900;
-    overflow: hidden;
-    position: absolute;
-    padding-left: 0.5rem;
-    top: 0.2rem;
-    left: 9.5rem;
-    animation: openclose 8s ease-in-out infinite;
+  animation: openclose 8s ease-in-out infinite; /* Apply the "openclose" animation to the message with an 8-second duration, ease-in-out timing function, and infinite iteration */
+  background-color: #222; /* Set the background color of the message to #222 */
+  color: rgb(255, 255, 255); /* Set the text color to white */
+  display: block; /* Display the message as a block-level element */
+  font-weight: 900; /* Set the font weight to 900 */
+  left: 9.5rem; /* Set a left offset of 9.5rem */
+  overflow: hidden; /* Clip the content that overflows the message */
+  padding-left: 0.5rem; /* Set a left padding of 0.5rem */
+  position: absolute; /* Set the position to absolute */
+  top: 0.2rem; /* Set a top offset of 0.2rem */
 }
 
 @keyframes openclose {
-    0% {
-        top: 0rem;
-        width: 0;
-    }
-    5% {
-        width: 0;
-    }
-    15% {
-        width: 16rem;
-    }
-    30% {
-        top: 0.2rem;
-        width: 16rem;
-    }
-    33% {
-        top: 0.2rem;
-        width: 0;
-    }
-    35% {
-        top: -3rem;
-        width: 0;
-    }
-    38% {
-        top: -3rem;
-    }
-    48% {
-        top: -3rem;
-        width: 18rem;
-    }
-    62% {
-        top: -3rem;
-        width: 18rem;
-    }
-    66% {
-        top: -3rem;
-        width: 0;
-        text-indent: 0;
-    }
-    71% {
-        top: -5.9rem;
-        width: 0;
-    }
-    86% {
-        top: -5.9rem;
-        width: 18rem;
-    }
-    95% {
-        top: -5.9rem;
-        width: 18rem;
-    }
-    98% {
-        top: -5.9rem;
-        width: 0;
-    }
-    100% {
-        top: 0;
-        width: 0;
-    }
+  0% {
+    top: 0rem;
+    width: 0;
+  }
+  5% {
+    width: 0;
+  }
+  15% {
+    width: 16rem;
+  }
+  30% {
+    top: 0.2rem;
+    width: 16rem;
+  }
+  33% {
+    top: 0.2rem;
+    width: 0;
+  }
+  35% {
+    top: -3rem;
+    width: 0;
+  }
+  38% {
+    top: -3rem;
+  }
+  48% {
+    top: -3rem;
+    width: 18rem;
+  }
+  62% {
+    top: -3rem;
+    width: 18rem;
+  }
+  66% {
+    top: -3rem;
+    width: 0;
+    text-indent: 0;
+  }
+  71% {
+    top: -5.9rem;
+    width: 0;
+  }
+  86% {
+    top: -5.9rem;
+    width: 18rem;
+  }
+  95% {
+    top: -5.9rem;
+    width: 18rem;
+  }
+  98% {
+    top: -5.9rem;
+    width: 0;
+  }
+  100% {
+    top: 0;
+    width: 0;
+  }
 }

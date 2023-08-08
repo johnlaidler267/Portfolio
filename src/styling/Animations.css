@@ -1,0 +1,78 @@
+/*=============================================
+=                   About Me                  =
+=============================================*/
+
+/*----------  Text shudder  ----------*/
+
+@keyframes shudder {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(5px);
+  }
+}
+
+/*=====  End of About Me  ======*/
+
+/*=============================================
+=                    Header                   =
+=============================================*/
+
+/*----------  Shifting header bg color gradient  ----------*/
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/*----------  Floating contact buttons  ----------*/
+
+@keyframes float {
+  0% {
+    box-shadow: 0 5px 15px 0px rgba(56, 101, 62, 0.95);
+    transform: translatey(0px);
+  }
+  50% {
+    box-shadow: 0 25px 15px 0px rgba(56, 101, 62, 0.97);
+    transform: translatey(-20px);
+  }
+  100% {
+    box-shadow: 0 5px 15px 0px rgba(56, 101, 62, 1.2);
+    transform: translatey(0px);
+  }
+}
+
+/*----------  Header scroll-down arrow sliding  ----------*/
+
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px, -20px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(20px, 20px);
+  }
+}
+
+/*=====  End of Header  ======*/

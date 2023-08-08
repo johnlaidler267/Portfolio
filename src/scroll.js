@@ -20,7 +20,7 @@ export default function reveal() {
             start: "top 80%",
             // Set the start position of the trigger point for the animation at 80% from the top of the viewport.
 
-            end: "bottom 5%",
+            end: "bottom 3%",
             // Set the end position of the trigger point for the animation at 20% from the bottom of the viewport.
 
             markers: false,
