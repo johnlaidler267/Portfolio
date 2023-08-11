@@ -1,3 +1,5 @@
+@import url("./Animations.css");
+
 /* Styles for a container element */
 .container {
   width: 100% !important; /* Set the container's width to 100% and override any other styles */
@@ -11,15 +13,14 @@
 .portfolio-bg {
   /* Center the card grid */
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: center !important;
+  align-items: center !important;
 
   height: 100vh; /* Set the height of the portfolio section to 100% of the viewport height */
-  width: 100vw;
+  max-width: 100%;
 
   background-color: #736c56; /* Set the background color of the portfolio section to #736c56 */
   opacity: 0.8; /* Set the opacity of the portfolio section to 0.8 */
-  padding: 3rem; /* Set a padding of 3rem inside the portfolio section */
 }
 
 /*=============================================
@@ -28,38 +29,63 @@
 
 /* Styles for service cards */
 .service-card {
-  align-items: center; /* Center-align the items inside the card */
   background-color: black; /* Set the background color of the card to black */
   border-radius: 1rem; /* Set the border radius of the card to 1rem (rounded corners) */
   color: white; /* Set the text color to white */
   display: flex; /* Display the card as a flex container */
+  align-items: center; /* Center-align the items inside the card */
+  justify-content: center;
+  overflow: hidden;
+
+  padding: 3rem; /* Set the padding inside the card to 2rem */
+  font-size: 1.1vw;
+
+  width: 100%; /* Set the width of the card to 98% */
   height: 20vw; /* Set the height of the card to 20% of the viewport width */
-  justify-content: center; /* Center-align the content horizontally inside the card */
-  margin: 1rem; /* Set a margin of 1rem around the card */
-  opacity: 0.95; /* Set the opacity of the card to 0.95 */
-  padding: 2rem; /* Set the padding inside the card to 2rem */
-  width: 98%; /* Set the width of the card to 98% */
+
+  /* Device size */
+  @media (max-width: 575px) {
+    display: flex;
+    height: 30vh;
+    width: 100%;
+  }
 }
 
-/* Styles for the content in the second column of service cards */
-.service-card .col-sm-8 {
-  align-items: center; /* Center-align the items inside the column */
-  display: flex; /* Display the column as a flex container */
-  justify-content: center; /* Center-align the content horizontally inside the column */
+.service-card .card-title {
+  font-size: max(1.5vw, 10px) !important;
 }
 
-/* Styles for service images */
+/* Service images */
 .service-image {
   border-radius: 1rem !important; /* Set the border radius of the image to 1rem and override any other styles */
-  max-width: 100%; /* Set the maximum width of the image to 100% */
-  padding: 0.2rem; /* Set a padding of 0.2rem around the image */
-  width: 30vw !important; /* Set the width of the image to 30% of the viewport width and override any other styles */
+  max-width: 100%;
+  max-height: 100%;
+  min-width: 100px;
+  padding: none !important;
+  position: relative;
+  box-sizing: border-box;
+
+  /* Device size */
+  @media (max-width: 575px) {
+    width: 110px !important;
+  }
 }
 
-/* Styles for stacked elements */
-.stack {
-  display: flex; /* Display the elements as a flex container with stacked orientation (column) */
-  flex-direction: column; /* Set the flex direction to column for stacked layout */
+/* Columns (image,text) within the service-card */
+.service-col {
+  align-items: center; /* Vertical-align the items inside the column */
+  justify-content: center; /* Horizontal-align the content inside the column */
+
+  /* Device size */
+  @media (max-width: 575px) {
+    margin-top: 1rem !important;
+    font-size: 0.5rem;
+    text-align: center;
+  }
+}
+
+.row {
+  justify-content: center;
 }
 
 /*=============================================
@@ -69,19 +95,23 @@
 /* Styles for service buttons */
 .service-btn {
   background-color: #222 !important; /* Set the background color of the button to #222 and override any other styles */
-  border: none !important; /* Remove the border and override any other styles */
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2) !important; /* Add a box shadow to the button and override any other styles */
   color: #fff !important; /* Set the text color to white and override any other styles */
   cursor: pointer !important; /* Set the cursor to a pointer (hand) and override any other styles */
   display: block !important; /* Set the display property to block and override any other styles */
-  font-size: 15px !important; /* Set the font size to 15 pixels and override any other styles */
   font-weight: 700 !important; /* Set the font weight to bold and override any other styles */
   outline: none !important; /* Remove the outline when the button is focused and override any other styles */
   overflow: hidden !important; /* Clip the button's content if it overflows and override any other styles */
-  padding: 17px 60px !important; /* Set the padding (top/bottom, left/right) to 17 pixels and 60 pixels respectively, and override any other styles */
+  padding: 10% 10% !important; /* Set the padding (top/bottom, left/right) to 17 pixels and 60 pixels respectively, and override any other styles */
   position: relative !important; /* Set the position to relative and override any other styles */
   text-align: center !important; /* Center-align the text inside the button and override any other styles */
   text-transform: uppercase !important; /* Transform the text to uppercase and override any other styles */
+  font-size: max(1.1vw, 7px) !important;
+
+  /* Device size */
+  @media (max-width: 575px) {
+    margin-bottom: 1rem;
+  }
 }
 
 /* Styles for the inner content of service buttons */
@@ -131,11 +161,15 @@
 
 /* Styles for the grid layout in the portfolio section */
 .portfolio-grid {
-  align-content: center; /* Center-align the content inside the portfolio grid */
   display: grid; /* Display the portfolio grid as a grid container */
+  align-content: center; /* Center-align the content inside the portfolio grid */
+  justify-items: center; /* Center-align the items inside the grid horizontally */
+
   grid-template-columns: auto auto; /* Set the grid columns to have automatic width */
   grid-template-rows: auto auto auto; /* Set the grid rows to have automatic height */
-  justify-items: center; /* Center-align the items inside the grid horizontally */
+  grid-gap: 1.5rem;
+
+  max-width: 85vw;
 }
 
 /* Styles for specific portfolio items */
@@ -159,100 +193,24 @@
   grid-row: 3; /* Position the item in the third grid row */
 }
 
+/*=============================================
+=          Scrolling Title  (View My)         =
+=============================================*/
+
 /* Styles for the title divs */
 .title-div {
-  border-left: 6px dotted white; /* Set a left border with dotted style and white color for title divs */
   color: white; /* Set the text color to white */
-  font-size: 2rem !important; /* Set the font size to 2rem and override any other styles */
-  font-weight: 100 !important; /* Set the font weight to 100 and override any other styles */
+  font-size: max(
+    4vw,
+    2rem
+  ) !important; /* Set the font size to 2rem and override any other styles */
+  font-weight: 600 !important; /* Set the font weight to 100 and override any other styles */
+  font-family: "Nanum Pen Script" !important;
+  font-style: italic !important;
   justify-self: start; /* Align the title divs to the start (left) of the grid cells */
-  left: 1rem; /* Set a left offset of 1rem */
-  line-height: 1.5; /* Set the line height to 1.5 */
-  overflow: hidden; /* Clip the content that overflows the title div */
-  position: relative; /* Set the position to relative */
-  white-space: nowrap; /* Prevent wrapping of the title div content */
   width: 100%; /* Set the width to 100% */
-}
 
-/* Styles for the spans within title divs */
-.title-div span {
-  font-size: 2rem; /* Set the font size of the spans to 2rem */
-  height: 100%; /* Set the height of the spans to 100% */
-  margin-left: 10px; /* Set a left margin of 10px */
-  
-}
-
-/* Styles for the animated message */
-.message {
-  animation: openclose 8s ease-in-out infinite; /* Apply the "openclose" animation to the message with an 8-second duration, ease-in-out timing function, and infinite iteration */
-  background-color: #222; /* Set the background color of the message to #222 */
-  color: rgb(255, 255, 255); /* Set the text color to white */
-  display: block; /* Display the message as a block-level element */
-  font-weight: 900; /* Set the font weight to 900 */
-  left: 9.5rem; /* Set a left offset of 9.5rem */
-  overflow: hidden; /* Clip the content that overflows the message */
-  padding-left: 0.5rem; /* Set a left padding of 0.5rem */
-  position: absolute; /* Set the position to absolute */
-  top: 0.2rem; /* Set a top offset of 0.2rem */
-}
-
-@keyframes openclose {
-  0% {
-    top: 0rem;
-    width: 0;
-  }
-  5% {
-    width: 0;
-  }
-  15% {
-    width: 16rem;
-  }
-  30% {
-    top: 0.2rem;
-    width: 16rem;
-  }
-  33% {
-    top: 0.2rem;
-    width: 0;
-  }
-  35% {
-    top: -3rem;
-    width: 0;
-  }
-  38% {
-    top: -3rem;
-  }
-  48% {
-    top: -3rem;
-    width: 18rem;
-  }
-  62% {
-    top: -3rem;
-    width: 18rem;
-  }
-  66% {
-    top: -3rem;
-    width: 0;
-    text-indent: 0;
-  }
-  71% {
-    top: -5.9rem;
-    width: 0;
-  }
-  86% {
-    top: -5.9rem;
-    width: 18rem;
-  }
-  95% {
-    top: -5.9rem;
-    width: 18rem;
-  }
-  98% {
-    top: -5.9rem;
-    width: 0;
-  }
-  100% {
-    top: 0;
-    width: 0;
-  }
+  /* Make the title take up both columns */
+  grid-row: 1;
+  grid-column: 1 / -1;
 }

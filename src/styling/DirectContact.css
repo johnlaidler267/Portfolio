@@ -5,15 +5,16 @@
 =============================================*/
 
 .direct-contact-div {
-  /* Center the stuff inside the form */
+  color: white;
+  padding: 2rem;
+  width: max(55vw, 25rem);
+
+  /* Center everything in the form div (e.g. form, title, my email) */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-  color: white;
-  padding: 2rem;
-  width: max(55vw, 25rem);
+  font-size: max(1.3vw, 0.75rem);
 }
 
 .direct-contact-bg {
@@ -25,12 +26,28 @@
   background-color: black;
   border-top: 2px dashed white;
   height: 80vh;
+  max-width: 100%;
   opacity: 0.75;
 }
 
 /*=============================================
 =                 Form Components             =
 =============================================*/
+
+#contact-form {
+  width: 100%;
+
+  /* Center the stuff inside the form (description) */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-control:focus {
+  border-color: rgb(133, 123, 110) !important;
+  box-shadow: 0 0 0 0.15rem rgb(133, 123, 110) !important;
+}
 
 /*----------  Div displaying my email (below form)   ----------*/
 

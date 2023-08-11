@@ -1,8 +1,4 @@
 /* This applies to everything in the entire page */
 * {
   font-family: "Sunset Gothic", sans-serif;
-}
-
-body {
-  margin-top: -5.2rem !important;
-}
+}margin-top: -5.2rem !important;

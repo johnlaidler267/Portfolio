@@ -52,6 +52,10 @@
   border-color: white; /* Color for the toggler button */
 }
 
+.navbar-toggler:focus {
+  box-shadow: none !important; /* Color for the toggler button */
+}
+
 /* Media query for smaller screens, adjust as needed */
 @media (max-width: 768px) {
   .navbar {

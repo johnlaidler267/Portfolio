@@ -3,27 +3,27 @@ div {
 }
 
 @font-face {
-  font-family: 'Sunset Gothic';
-  src: url('./fonts/SunsetGothic.ttf') /* For TTF fonts */
+  font-family: "Sunset Gothic";
+  src: url("./fonts/SunsetGothic.ttf"); /* For TTF fonts */
   /* Add additional font formats as necessary */
 }
 
 @font-face {
-  font-family: 'Sunset Gothic Light';
-  src: url('./fonts/SunsetGothicLight.ttf') /* For TTF fonts */
+  font-family: "Sunset Gothic Light";
+  src: url("./fonts/SunsetGothicLight.ttf"); /* For TTF fonts */
   /* Add additional font formats as necessary */
 }
 
 * {
-  font-family: 'Sunset Gothic', sans-serif, 'Courier New', Courier, monospace;
+  font-family: "Sunset Gothic", sans-serif, "Courier New", Courier, monospace;
 }
 
-.card-text  {
-  font-family: 'Sunset Gothic Light', sans-serif !important;
+.card-text {
+  font-family: "Sunset Gothic Light", sans-serif !important;
 }
 
 .form-label {
-  font-family: 'Sunset Gothic Light', sans-serif !important;
+  font-family: "Sunset Gothic Light", sans-serif !important;
 }
 
 .revealUp {

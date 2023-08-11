@@ -76,3 +76,70 @@
 }
 
 /*=====  End of Header  ======*/
+
+/*=============================================
+=             Portfolio Button Slide          =
+=============================================*/
+
+@keyframes openclose {
+  0% {
+    top: 0vh;
+    width: 0;
+  }
+  5% {
+    width: 0;
+  }
+  15% {
+    width: 16vh;
+  }
+  30% {
+    top: 0.2vh;
+    width: 16vw;
+  }
+  33% {
+    top: 0.2vh;
+    width: 0;
+  }
+  35% {
+    top: -3vh;
+    width: 0;
+  }
+  38% {
+    top: -3rem;
+  }
+  48% {
+    top: -3vh;
+    width: 18vw;
+  }
+  62% {
+    top: -3vh;
+    width: 18vw;
+  }
+  66% {
+    top: -3vh;
+    width: 0;
+    text-indent: 0;
+  }
+  71% {
+    top: -5.9vh;
+    width: 0;
+  }
+  86% {
+    top: -5.9vh;
+    width: 18vw;
+  }
+  95% {
+    top: -5.9vh;
+    width: 18vw;
+  }
+  98% {
+    top: -5.9vh;
+    width: 0;
+  }
+  100% {
+    top: 0;
+    width: 0;
+  }
+}
+
+/*=====  End of Portfolio  ======*/

@@ -7,7 +7,8 @@
 /* Styles for the background div of the header (name/contact) */
 #header-bg {
   height: 100vh; /* Full height of the viewport */
-  width: 100vw; /* Full width of the viewport */
+  max-width: 100%;
+  margin-top: -5.2rem !important;
 
   background: linear-gradient(-45deg, #000000, #302f25, #47483e, bisque);
   background-size: 400% 400%;
@@ -22,6 +23,11 @@
   justify-content: center; /* Horizontally centers content */
   align-items: center; /* Vertically centers content */
   text-align: center; /* Horizontally centers text */
+
+  @media (max-width: 991px) {
+    margin-top: -10.2rem !important;
+    height: 105vh;
+  }
 }
 
 /* Styles for the card that contains the header text */
@@ -42,6 +48,7 @@
   z-index: 2 !important;
   position: relative;
   width: fit-content;
+  text-shadow: 0 0 1px #ffffff;
 }
 
 .name::before {
