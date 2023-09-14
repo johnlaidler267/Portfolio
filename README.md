@@ -1,8 +1,8 @@
 
 # Portfolio Project
 
-[Live Website Link]((https://johnlaidler267.github.io/Portfolio/))
-[Google](https://www.google.com)
+[Live Site](([https://johnlaidler267.github.io/Portfolio/](https://johnlaidler267.github.io/Portfolio/)))
+
 Welcome to my portfolio project! This repository showcases my front-end design skills and hosts various projects, including my resume and other work.
 
 ## Introduction
