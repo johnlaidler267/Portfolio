@@ -25,4 +25,4 @@ To set up this project locally, follow these steps:
 
 ## Usage
 
-Feel free to explore the projects and interact with my resume on the live demo links provided above. If you have any questions or feedback, please don't hesitate to [contact me](mailto:youremail@example.com).
+Feel free to explore the projects and interact with my resume on the live demo links provided above. If you have any questions or feedback, please don't hesitate to [contact me](mailto:johnmlaidler@comcast.net).
