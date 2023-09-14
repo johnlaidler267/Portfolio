@@ -1,7 +1,5 @@
 
-# Portfolio Project
-
-[Live Site](https://johnlaidler267.github.io/Portfolio/)
+# Portfolio Project [Live Site](https://johnlaidler267.github.io/Portfolio/)
 
 Welcome to my portfolio project! This repository showcases my front-end design skills and hosts various projects, including my resume and other work.
 
