@@ -14,7 +14,7 @@ Welcome to my [portfolio site](https://johnlaidler267.github.io/Portfolio/)! Thi
 - React Bootstrap
 - GSAP
 
-- ## Setup
+## Setup
 
 To set up this project locally, follow these steps:
 
