@@ -5,17 +5,14 @@
 
 Welcome to my [portfolio site](https://johnlaidler267.github.io/Portfolio/)! This repository showcases my front-end design skills and hosts various projects, including my resume and other work.
 
-## Introduction
-
-This repository serves as my portfolio, highlighting my skills and projects. It's a one-stop destination to explore my front-end design capabilities and access some of my hosted projects.
-
 ## Technologies Used
 
 - HTML
 - CSS
 - JavaScript
-- [Any other relevant technologies]
--
+- React
+- React Bootstrap
+
 - ## Setup
 
 To set up this project locally, follow these steps:
