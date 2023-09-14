@@ -1,8 +1,8 @@
-@import url("./Animations.css");
+@import url('./Animations.css');
 
 /* Styles for a container element */
 .container {
-  width: 100% !important; /* Set the container's width to 100% and override any other styles */
+	width: 100% !important; /* Set the container's width to 100% and override any other styles */
 }
 
 /*=============================================
@@ -11,16 +11,16 @@
 
 /* Styles for the background of the portfolio section */
 .portfolio-bg {
-  /* Center the card grid */
-  display: flex;
-  justify-content: center !important;
-  align-items: center !important;
+	/* Center the card grid */
+	display: flex;
+	justify-content: center !important;
+	align-items: center !important;
 
-  height: 100vh; /* Set the height of the portfolio section to 100% of the viewport height */
-  max-width: 100%;
+	height: 100vh; /* Set the height of the portfolio section to 100% of the viewport height */
+	max-width: 100%;
 
-  background-color: #736c56; /* Set the background color of the portfolio section to #736c56 */
-  opacity: 0.8; /* Set the opacity of the portfolio section to 0.8 */
+	background-color: #736c56; /* Set the background color of the portfolio section to #736c56 */
+	opacity: 0.8; /* Set the opacity of the portfolio section to 0.8 */
 }
 
 /*=============================================
@@ -29,63 +29,63 @@
 
 /* Styles for service cards */
 .service-card {
-  background-color: black; /* Set the background color of the card to black */
-  border-radius: 1rem; /* Set the border radius of the card to 1rem (rounded corners) */
-  color: white; /* Set the text color to white */
-  display: flex; /* Display the card as a flex container */
-  align-items: center; /* Center-align the items inside the card */
-  justify-content: center;
-  overflow: hidden;
+	background-color: black; /* Set the background color of the card to black */
+	border-radius: 1rem; /* Set the border radius of the card to 1rem (rounded corners) */
+	color: white; /* Set the text color to white */
+	display: flex; /* Display the card as a flex container */
+	align-items: center; /* Center-align the items inside the card */
+	justify-content: center;
+	overflow: hidden;
 
-  padding: 3rem; /* Set the padding inside the card to 2rem */
-  font-size: 1.1vw;
+	padding: 3rem; /* Set the padding inside the card to 2rem */
+	font-size: 1.1vw;
 
-  width: 100%; /* Set the width of the card to 98% */
-  height: 20vw; /* Set the height of the card to 20% of the viewport width */
+	width: 100%; /* Set the width of the card to 98% */
+	height: 20vw; /* Set the height of the card to 20% of the viewport width */
 
-  /* Device size */
-  @media (max-width: 575px) {
-    display: flex;
-    height: 30vh;
-    width: 100%;
-  }
+	/* Device size */
+	@media (max-width: 575px) {
+		display: flex;
+		height: 30vh;
+		width: 100%;
+	}
 }
 
 .service-card .card-title {
-  font-size: max(1.5vw, 10px) !important;
+	font-size: max(1.5vw, 10px) !important;
 }
 
 /* Service images */
 .service-image {
-  border-radius: 1rem !important; /* Set the border radius of the image to 1rem and override any other styles */
-  max-width: 100%;
-  max-height: 100%;
-  min-width: 100px;
-  padding: none !important;
-  position: relative;
-  box-sizing: border-box;
+	border-radius: 1rem !important; /* Set the border radius of the image to 1rem and override any other styles */
+	max-width: 100%;
+	max-height: 100%;
+	min-width: 100px;
+	padding: none !important;
+	position: relative;
+	box-sizing: border-box;
 
-  /* Device size */
-  @media (max-width: 575px) {
-    width: 110px !important;
-  }
+	/* Device size */
+	@media (max-width: 575px) {
+		width: 110px !important;
+	}
 }
 
 /* Columns (image,text) within the service-card */
 .service-col {
-  align-items: center; /* Vertical-align the items inside the column */
-  justify-content: center; /* Horizontal-align the content inside the column */
+	align-items: center; /* Vertical-align the items inside the column */
+	justify-content: center; /* Horizontal-align the content inside the column */
 
-  /* Device size */
-  @media (max-width: 575px) {
-    margin-top: 1rem !important;
-    font-size: 0.5rem;
-    text-align: center;
-  }
+	/* Device size */
+	@media (max-width: 575px) {
+		margin-top: 1rem !important;
+		font-size: 0.5rem;
+		text-align: center;
+	}
 }
 
 .row {
-  justify-content: center;
+	justify-content: center;
 }
 
 /*=============================================
@@ -94,65 +94,65 @@
 
 /* Styles for service buttons */
 .service-btn {
-  background-color: #222 !important; /* Set the background color of the button to #222 and override any other styles */
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2) !important; /* Add a box shadow to the button and override any other styles */
-  color: #fff !important; /* Set the text color to white and override any other styles */
-  cursor: pointer !important; /* Set the cursor to a pointer (hand) and override any other styles */
-  display: block !important; /* Set the display property to block and override any other styles */
-  font-weight: 700 !important; /* Set the font weight to bold and override any other styles */
-  outline: none !important; /* Remove the outline when the button is focused and override any other styles */
-  overflow: hidden !important; /* Clip the button's content if it overflows and override any other styles */
-  padding: 10% 10% !important; /* Set the padding (top/bottom, left/right) to 17 pixels and 60 pixels respectively, and override any other styles */
-  position: relative !important; /* Set the position to relative and override any other styles */
-  text-align: center !important; /* Center-align the text inside the button and override any other styles */
-  text-transform: uppercase !important; /* Transform the text to uppercase and override any other styles */
-  font-size: max(1.1vw, 7px) !important;
+	background-color: #222 !important; /* Set the background color of the button to #222 and override any other styles */
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2) !important; /* Add a box shadow to the button and override any other styles */
+	color: #fff !important; /* Set the text color to white and override any other styles */
+	cursor: pointer !important; /* Set the cursor to a pointer (hand) and override any other styles */
+	display: block !important; /* Set the display property to block and override any other styles */
+	font-weight: 700 !important; /* Set the font weight to bold and override any other styles */
+	outline: none !important; /* Remove the outline when the button is focused and override any other styles */
+	overflow: hidden !important; /* Clip the button's content if it overflows and override any other styles */
+	padding: 10% 10% !important; /* Set the padding (top/bottom, left/right) to 17 pixels and 60 pixels respectively, and override any other styles */
+	position: relative !important; /* Set the position to relative and override any other styles */
+	text-align: center !important; /* Center-align the text inside the button and override any other styles */
+	text-transform: uppercase !important; /* Transform the text to uppercase and override any other styles */
+	font-size: max(1.1vw, 7px) !important;
 
-  /* Device size */
-  @media (max-width: 575px) {
-    margin-bottom: 1rem;
-  }
+	/* Device size */
+	@media (max-width: 575px) {
+		margin-bottom: 1rem;
+	}
 }
 
 /* Styles for the inner content of service buttons */
 .service-btn span {
-  position: relative !important; /* Set the position to relative for the inner content and override any other styles */
-  z-index: 1 !important; /* Set the z-index to 1 and override any other styles */
+	position: relative !important; /* Set the position to relative for the inner content and override any other styles */
+	z-index: 1 !important; /* Set the z-index to 1 and override any other styles */
 }
 
 /* Styles for the animation effect on service buttons */
 .service-btn:after {
-  /* The following styles will create a diagonal overlay on the button */
-  -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg); /* Apply a transformation to create a diagonal overlay and rotate it 45 degrees for Webkit browsers */
-  -webkit-transition: all 0.5s ease-in-out; /* Apply a smooth transition effect for Webkit browsers */
-  background: #acb2b3; /* Set the backßground color for the diagonal overlay */
-  content: ""; /* Add an empty pseudo-element content */
-  height: 490%; /* Set the height of the diagonal overlay to 490% of the button's height */
-  left: 0; /* Position the overlay at the left edge of the button */
-  position: absolute; /* Position the overlay absolutely */
-  top: 0; /* Position the overlay at the top edge of the button */
-  transform: translateX(-98%) translateY(-25%) rotate(45deg); /* Apply a transformation to create a diagonal overlay and rotate it 45 degrees */
-  transition: all 0.5s ease-in-out; /* Apply a smooth transition effect */
-  width: 140%; /* Set the width of the diagonal overlay to 140% of the button's width */
+	/* The following styles will create a diagonal overlay on the button */
+	-webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg); /* Apply a transformation to create a diagonal overlay and rotate it 45 degrees for Webkit browsers */
+	-webkit-transition: all 0.5s ease-in-out; /* Apply a smooth transition effect for Webkit browsers */
+	background: #acb2b3; /* Set the backßground color for the diagonal overlay */
+	content: ''; /* Add an empty pseudo-element content */
+	height: 490%; /* Set the height of the diagonal overlay to 490% of the button's height */
+	left: 0; /* Position the overlay at the left edge of the button */
+	position: absolute; /* Position the overlay absolutely */
+	top: 0; /* Position the overlay at the top edge of the button */
+	transform: translateX(-98%) translateY(-25%) rotate(45deg); /* Apply a transformation to create a diagonal overlay and rotate it 45 degrees */
+	transition: all 0.5s ease-in-out; /* Apply a smooth transition effect */
+	width: 140%; /* Set the width of the diagonal overlay to 140% of the button's width */
 }
 
 /* Styles for the animation effect on service buttons when hovered */
 .service-btn:hover:after {
-  /* The following styles will adjust the position and rotation on hover */
-  -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg); /* Apply a transformation to adjust the position and rotation on hover for Webkit browsers */
-  transform: translateX(-9%) translateY(-25%) rotate(45deg); /* Apply a transformation to adjust the position and rotation on hover */
+	/* The following styles will adjust the position and rotation on hover */
+	-webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg); /* Apply a transformation to adjust the position and rotation on hover for Webkit browsers */
+	transform: translateX(-9%) translateY(-25%) rotate(45deg); /* Apply a transformation to adjust the position and rotation on hover */
 }
 
 /* Styles for primary buttons */
 .btn-primary {
-  /* The following styles will override Bootstrap's default button styles */
-  --bs-btn-bg-active: black !important; /* Set the active background color of the primary button to black and override any other styles */
-  --bs-btn-bg-hover: black !important; /* Set the background color of the primary button on hover to black and override any other styles */
-  --bs-btn-bg: white !important; /* Set the background color of the primary button to white and override any other styles */
-  --bs-btn-border-active: black !important; /* Set the active border color of the primary button to black and override any other styles */
-  --bs-btn-border-color: none !important; /* Remove the border color of the primary button and override any other styles */
-  --bs-btn-border-hover: black !important; /* Set the border color of the primary button on hover to black and override any other styles */
-  --bs-btn-color: black !important; /* Set the text color of the primary button to black and override any other styles */
+	/* The following styles will override Bootstrap's default button styles */
+	--bs-btn-bg-active: black !important; /* Set the active background color of the primary button to black and override any other styles */
+	--bs-btn-bg-hover: black !important; /* Set the background color of the primary button on hover to black and override any other styles */
+	--bs-btn-bg: white !important; /* Set the background color of the primary button to white and override any other styles */
+	--bs-btn-border-active: black !important; /* Set the active border color of the primary button to black and override any other styles */
+	--bs-btn-border-color: none !important; /* Remove the border color of the primary button and override any other styles */
+	--bs-btn-border-hover: black !important; /* Set the border color of the primary button on hover to black and override any other styles */
+	--bs-btn-color: black !important; /* Set the text color of the primary button to black and override any other styles */
 }
 
 /*=============================================
@@ -161,36 +161,36 @@
 
 /* Styles for the grid layout in the portfolio section */
 .portfolio-grid {
-  display: grid; /* Display the portfolio grid as a grid container */
-  align-content: center; /* Center-align the content inside the portfolio grid */
-  justify-items: center; /* Center-align the items inside the grid horizontally */
+	display: grid; /* Display the portfolio grid as a grid container */
+	align-content: center; /* Center-align the content inside the portfolio grid */
+	justify-items: center; /* Center-align the items inside the grid horizontally */
 
-  grid-template-columns: auto auto; /* Set the grid columns to have automatic width */
-  grid-template-rows: auto auto auto; /* Set the grid rows to have automatic height */
-  grid-gap: 1.5rem;
+	grid-template-columns: auto auto; /* Set the grid columns to have automatic width */
+	grid-template-rows: auto auto auto; /* Set the grid rows to have automatic height */
+	grid-gap: 1.5rem;
 
-  max-width: 85vw;
+	max-width: 85vw;
 }
 
 /* Styles for specific portfolio items */
 .github {
-  grid-column: 1; /* Position the item in the first grid column */
-  grid-row: 2; /* Position the item in the second grid row */
+	grid-column: 1; /* Position the item in the first grid column */
+	grid-row: 2; /* Position the item in the second grid row */
 }
 
 .youtube {
-  grid-column: 1; /* Position the item in the first grid column */
-  grid-row: 3; /* Position the item in the third grid row */
+	grid-column: 1; /* Position the item in the first grid column */
+	grid-row: 3; /* Position the item in the third grid row */
 }
 
 .spotify {
-  grid-column: 2; /* Position the item in the second grid column */
-  grid-row: 2; /* Position the item in the second grid row */
+	grid-column: 2; /* Position the item in the second grid column */
+	grid-row: 2; /* Position the item in the second grid row */
 }
 
 .reading {
-  grid-column: 2; /* Position the item in the second grid column */
-  grid-row: 3; /* Position the item in the third grid row */
+	grid-column: 2; /* Position the item in the second grid column */
+	grid-row: 3; /* Position the item in the third grid row */
 }
 
 /*=============================================
@@ -199,18 +199,15 @@
 
 /* Styles for the title divs */
 .title-div {
-  color: white; /* Set the text color to white */
-  font-size: max(
-    4vw,
-    2rem
-  ) !important; /* Set the font size to 2rem and override any other styles */
-  font-weight: 600 !important; /* Set the font weight to 100 and override any other styles */
-  font-family: "Nanum Pen Script" !important;
-  font-style: italic !important;
-  justify-self: start; /* Align the title divs to the start (left) of the grid cells */
-  width: 100%; /* Set the width to 100% */
+	color: rgb(231, 219, 205); /* Set the text color to white */
+	font-size: max(4vw, 2rem) !important; /* Set the font size to 2rem and override any other styles */
+	font-weight: 600 !important; /* Set the font weight to 100 and override any other styles */
+	font-family: 'Nanum Pen Script' !important;
+	font-style: italic !important;
+	justify-self: start; /* Align the title divs to the start (left) of the grid cells */
+	width: 100%; /* Set the width to 100% */
 
-  /* Make the title take up both columns */
-  grid-row: 1;
-  grid-column: 1 / -1;
+	/* Make the title take up both columns */
+	grid-row: 1;
+	grid-column: 1 / -1;
 }

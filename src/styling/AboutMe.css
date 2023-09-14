@@ -1,23 +1,23 @@
-@import url("./Animations.css");
+@import url('./Animations.css');
 
 /*=============================================
 =             Section  Background             =
 =============================================*/
 
 #abtme-bg {
-  /* Background gradient */
-  background-image: radial-gradient(#ffffff 0.5px, rgb(200, 178, 154) 0.5px);
-  background-size: max(10px, 5px) 10px;
-  height: 80vh;
-  max-width: 100%;
-  padding: 8rem;
-  text-align: center;
-  border: none;
+	/* Background gradient */
+	background-image: radial-gradient(#ffffff 0.5px, rgb(200, 178, 154) 0.5px);
+	background-size: max(10px, 5px) 10px;
+	height: 80vh;
+	max-width: 100%;
+	padding: 8rem;
+	text-align: center;
+	border: none;
 
-  /* Center the card within the bg */
-  display: flex;
-  justify-content: center; /* centers the card horizontally (flex) */
-  align-items: center; /* centers the card vertically (flex) */
+	/* Center the card within the bg */
+	display: flex;
+	justify-content: center; /* centers the card horizontally (flex) */
+	align-items: center; /* centers the card vertically (flex) */
 }
 
 /*=============================================
@@ -26,42 +26,44 @@
 
 /* Actual card itself */
 #abtme-card {
-  background-color: transparent;
-  opacity: 0.7 !important;
-  color: black;
+	background-color: transparent;
+	opacity: 0.7 !important;
+	color: #b69979;
 
-  padding: 1rem;
-  width: 85vw !important;
-  height: 80vh;
-  font-weight: bold;
-  text-align: left;
+	padding: 1rem;
+	width: 85vw !important;
+	height: 80vh;
+	font-weight: 999;
+	text-shadow: 1px 0 #b69979;
+	text-align: left;
+	font-size: 1.2rem;
 
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 
-  /* Set a specific width for smaller viewports using a media query */
-  @media (max-width: 1200px) {
-    width: 80%; /* Set a specific width for smaller viewports */
-    font-size: 0.75rem;
-  }
+	/* Set a specific width for smaller viewports using a media query */
+	@media (max-width: 1200px) {
+		width: 80%; /* Set a specific width for smaller viewports */
+		font-size: 0.75rem;
+	}
 }
 
 /* Title within the About Me Card */
 #abtme-title {
-  padding-bottom: 0px !important;
-  /* animation: shudder 4s ease infinite; */
-  font-size: max(4.5vw, 2rem);
-  font-weight: 600;
-  color: rgb(105, 35, 35);
-  font-style: italic;
-  font-family: "Nanum Pen Script";
+	padding-bottom: 0px !important;
+	/* animation: shudder 4s ease infinite; */
+	font-size: max(4.5vw, 2rem);
+	font-weight: 600;
+	color: #527296;
+	font-style: italic;
+	font-family: 'Nanum Pen Script';
 }
 
 .abtme-text {
-  color: rgb(30, 29, 29);
-  font-weight: bold;
+	color: rgb(30, 29, 29);
+	font-weight: bold;
 }
 
 /*=============================================
@@ -69,32 +71,32 @@
 =============================================*/
 /* Image column */
 .col-sm-4 {
-  align-items: center;
+	align-items: center;
 
-  /* Center the image when it goes above the text (small screens) */
-  @media (max-width: 575px) {
-    justify-items: center;
-  }
+	/* Center the image when it goes above the text (small screens) */
+	@media (max-width: 575px) {
+		justify-items: center;
+	}
 }
 
 /* Text column */
 .col-sm-8 {
-  padding-left: 2rem !important;
+	padding-left: 2rem !important;
 
-  @media (max-width: 575px) {
-    padding-top: 1rem;
-  }
+	@media (max-width: 575px) {
+		padding-top: 1rem;
+	}
 }
 
 /* Actual Profile Image */
 #abtme-img {
-  /* Center my face within the img-div */
-  max-width: 100%;
-  max-height: 100%;
-  border-radius: 0%;
-  box-shadow: 0.4rem 0.4rem rgb(27, 27, 27) !important;
+	/* Center my face within the img-div */
+	max-width: 100%;
+	max-height: 100%;
+	border-radius: 0%;
+	box-shadow: 0.4rem 0.4rem rgb(27, 27, 27) !important;
 
-  @media (max-width: 575px) {
-    max-width: 50%;
-  }
+	@media (max-width: 575px) {
+		max-width: 50%;
+	}
 }
