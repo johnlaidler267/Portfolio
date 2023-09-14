@@ -12,6 +12,7 @@ Welcome to my [portfolio site](https://johnlaidler267.github.io/Portfolio/)! Thi
 - JavaScript
 - React
 - React Bootstrap
+- GSAP
 
 - ## Setup
 
