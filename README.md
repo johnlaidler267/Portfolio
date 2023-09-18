@@ -1,5 +1,6 @@
 
-# John Laidler's Personal Portfolio 
+# Personal Portfolio 
+<font color="red">This text is red!</font>
 
 
 Welcome to my [portfolio site](https://johnlaidler267.github.io/Portfolio/)! This repository showcases my front-end design skills and hosts various projects, including my resume and other work.
