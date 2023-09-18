@@ -1,19 +1,19 @@
 
-# Personal Portfolio 
-> By John Laidler
+# *John Laidler's*  Portfolio 🧑‍💻
 
 Welcome to my [portfolio site](https://johnlaidler267.github.io/Portfolio/)! This repository showcases my front-end design skills and hosts various projects, including my resume and other work.
+>	---
 
-## Technologies Used
+### Technologies Used 🌐
 
-- HTML
-- CSS
+- HTML/CSS
 - JavaScript
-- React
+- React.js
 - React Bootstrap
 - GSAP
 
-## Setup
+	---
+### Setup ⚙️
 
 To set up this project locally, follow these steps:
 
@@ -22,6 +22,9 @@ To set up this project locally, follow these steps:
 3. Open the HTML files in your favorite code editor.
 4. Customize the content and design to reflect your personal brand.
 
-## Usage
+	---
 
-Feel free to explore the projects and interact with my resume on the live demo links provided above. If you have any questions or feedback, please don't hesitate to [contact me](mailto:johnmlaidler@comcast.net).
+> #### Usuage 📩
+>
+> Feel free to explore the projects and interact with my resume on the live demo links provided above. If you have any questions or feedback, please don't hesitate to [contact me](mailto:johnmlaidler@comcast.net).
+
