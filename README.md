@@ -1,6 +1,5 @@
 
-# Portfolio Project 
-
+# John Laidler: Portfolio 
 
 
 Welcome to my [portfolio site](https://johnlaidler267.github.io/Portfolio/)! This repository showcases my front-end design skills and hosts various projects, including my resume and other work.
