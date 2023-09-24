@@ -4,6 +4,7 @@
 	"homepage": "http://johnlaidler267.github.io/Portfolio",
 	"private": false,
 	"dependencies": {
+		"@babel/plugin-proposal-private-property-in-object": "^1.0.0",
 		"@emailjs/browser": "^3.11.0",
 		"@testing-library/jest-dom": "^5.17.0",
 		"@testing-library/react": "^13.4.0",
