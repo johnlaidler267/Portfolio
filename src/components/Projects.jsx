@@ -7,6 +7,7 @@ import { FaProjectDiagram } from 'react-icons/fa';
 //IMAGES
 import DebateMe from '../images/DebateMe.png';
 import Connect4 from '../images/Connect4.png';
+import StudentLifter from '../images/StudentLifter.png';
 
 const styles = {
 	projectsContainer: {
@@ -70,7 +71,7 @@ const projects = [
 		description:
 			'\n► Designed and implemented a robust e-commerce platform from scratch, utilizing MongoDB to efficiently store and manage customer information and product data.\n► Integrated features such as cart and checkout services, order history and wishlists, product search functionality, and more. \n► Implemented a secure authentication system using Firebase, safeguarding user accounts, and ensuring securedata transfer.',
 		githubLink: 'https://github.com/johnlaidler267/StudLift',
-		imageLink: DebateMe,
+		imageLink: StudentLifter,
 	},
 	{
 		title: 'DebateMe',
