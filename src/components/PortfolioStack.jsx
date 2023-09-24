@@ -26,8 +26,8 @@ const PortfolioStack = () => {
 							<h1 className="title-div revealUp d-flex align-items-center">
 								<PiListMagnifyingGlassBold className="px-1" />
 								Other Work.
+								<div className="title-bg"></div>
 							</h1>
-							<div className="title-bg revealUp"></div>
 						</div>
 					</div>
 
