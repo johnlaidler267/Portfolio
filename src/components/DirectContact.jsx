@@ -3,7 +3,7 @@ import { Card, Container, Col, Modal, InputGroup, Form, Button } from 'react-boo
 import '../styling/DirectContact.css';
 
 //Import ICONS
-import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
+import { FaEnvelope } from 'react-icons/fa';
 import { MdOutlineConnectWithoutContact } from 'react-icons/md';
 import emailjs from '@emailjs/browser';
 

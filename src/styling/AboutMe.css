@@ -4,7 +4,7 @@
 =             Section  Background             =
 =============================================*/
 
-.abtme-bg {
+#abtme-bg {
 	/* Background gradient */
 	background-color: rgb(17 24 39);
 	border: none;

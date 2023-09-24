@@ -1,3 +1,6 @@
+//STYLING
+import '../styling/AboutMe.css';
+
 //REACT
 import React from 'react';
 
@@ -7,13 +10,10 @@ import { Card, Col, Row, Container } from 'react-bootstrap';
 //IMAGES
 import profile from '../images/ProfilePic.png';
 
-//STYLING
-import '../styling/AboutMe.css';
-
 //ABOUT ME: My profile picture, and a short description.
 const AboutMe = () => {
 	return (
-		<div className="abtme-bg d-flex justify-content-center">
+		<div className="d-flex justify-content-center" id="abtme-bg">
 			<Card className="p-lg-5 p-md-3 my-2 " id="abtme-card" bsPrefix="customCard">
 				<Card.Body>
 					<Row className="d-flex justify-content-center align-items-center m-auto">

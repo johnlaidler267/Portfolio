@@ -1,11 +1,11 @@
-// Style Sheets
-import '../styling/Header.css';
-
 //React
 import React from 'react';
 
 //React Components
 import { Card } from 'react-bootstrap';
+
+// Style Sheets
+import '../styling/Header.css';
 
 //Custom Components
 import Contact from './Contact';
