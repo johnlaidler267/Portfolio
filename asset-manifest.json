@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.2f11e1c9.css",
+    "main.js": "/Portfolio/static/js/main.50a7a0e7.js",
+    "static/js/787.b98c23e5.chunk.js": "/Portfolio/static/js/787.b98c23e5.chunk.js",
+    "static/media/GitHub.png": "/Portfolio/static/media/GitHub.ec7839e692c7fac90e0f.png",
+    "static/media/YouTube.png": "/Portfolio/static/media/YouTube.d7fd13109e043adfa382.png",
+    "static/media/Reading.png": "/Portfolio/static/media/Reading.c6d94ae875b8f4ef3250.png",
+    "static/media/Spotify.png": "/Portfolio/static/media/Spotify.b7f6100af7ae78930d1e.png",
+    "static/media/ProfilePic.png": "/Portfolio/static/media/ProfilePic.ce6193d1aa37e95d189c.png",
+    "static/media/SunsetGothic.ttf": "/Portfolio/static/media/SunsetGothic.165f45d4a8ec664d1a69.ttf",
+    "static/media/SunsetGothicLight.ttf": "/Portfolio/static/media/SunsetGothicLight.1189abb5f7def97d3dc7.ttf",
+    "static/media/githublogo.png": "/Portfolio/static/media/githublogo.abb5df5cb6033db6a886.png",
+    "static/media/StudentLifter.png": "/Portfolio/static/media/StudentLifter.0780d7a0c8b09e664222.png",
+    "static/media/Connect4.png": "/Portfolio/static/media/Connect4.5130136215b6737d1142.png",
+    "static/media/DebateMe.png": "/Portfolio/static/media/DebateMe.7a95394dfc5c01c71851.png",
+    "static/media/linkedinlogo.png": "/Portfolio/static/media/linkedinlogo.cc69689e8bef8bd28db0.png",
+    "index.html": "/Portfolio/index.html",
+    "main.2f11e1c9.css.map": "/Portfolio/static/css/main.2f11e1c9.css.map",
+    "main.50a7a0e7.js.map": "/Portfolio/static/js/main.50a7a0e7.js.map",
+    "787.b98c23e5.chunk.js.map": "/Portfolio/static/js/787.b98c23e5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2f11e1c9.css",
+    "static/js/main.50a7a0e7.js"
+  ]
+}
