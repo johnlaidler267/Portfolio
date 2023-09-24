@@ -11,9 +11,6 @@ import { useEffect } from 'react';
 
 
 function App() {
-  useEffect(() => {
-    reveal();
-  });
 
   return (
     <div className="App">

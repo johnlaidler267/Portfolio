@@ -1,5 +1,7 @@
 //React
-import React from 'react';
+import React, { useEffect } from 'react';
+
+import reveal from '../scroll.js';
 
 //React Components
 import { Card } from 'react-bootstrap';
@@ -12,6 +14,9 @@ import Contact from './Contact';
 
 // Header component: Contains my name/conctact info
 const Header = () => {
+	useEffect(() => {
+		reveal();
+	}, []);
 	return (
 		<div id="header-bg">
 			<a className="arrow" href="#abtme-bg">
