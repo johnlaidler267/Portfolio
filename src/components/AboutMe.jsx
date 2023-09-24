@@ -1,8 +1,8 @@
-//STYLING
-import '../styling/AboutMe.css';
-
 //REACT
 import React from 'react';
+
+//STYLING
+import '../styling/AboutMe.css';
 
 //REACT BOOTSTRAP
 import { Card, Col, Row, Container } from 'react-bootstrap';
