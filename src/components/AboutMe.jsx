@@ -14,7 +14,7 @@ import '../styling/AboutMe.css';
 const AboutMe = () => {
 	return (
 		<div className="abtme-bg d-flex justify-content-center">
-			<Card className="revealUp p-lg-5 p-md-3 my-2 " id="abtme-card" bsPrefix="customCard">
+			<Card className="p-lg-5 p-md-3 my-2 " id="abtme-card" bsPrefix="customCard">
 				<Card.Body>
 					<Row className="d-flex justify-content-center align-items-center m-auto">
 						<Col md={4} sm={10} xs={12}>
