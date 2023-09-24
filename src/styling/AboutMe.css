@@ -4,21 +4,29 @@
 =             Section  Background             =
 =============================================*/
 
-#abtme-bg {
+.abtme-bg {
 	/* Background gradient */
-	background-image: radial-gradient(#ffffff 0.5px, rgb(200, 178, 154) 0.5px);
-	background-size: max(10px, 5px) 10px;
-	height: 80vh;
-	max-width: 100%;
-	padding: 8rem;
-	text-align: center;
+	background-color: rgb(17 24 39);
 	border: none;
-
-	/* Center the card within the bg */
-	display: flex;
-	justify-content: center; /* centers the card horizontally (flex) */
-	align-items: center; /* centers the card vertically (flex) */
+	height: 100%;
 }
+
+/* Applies settings for the slice of the background */
+/* .aboutme-bg:after {
+	content: '';
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: lightgray;
+	-webkit-transform-origin: 100% 0;
+	-ms-transform-origin: 100% 0;
+	transform-origin: 100% 0;
+	-webkit-transform: skew(-45deg);
+	-ms-transform: skew(-45deg);
+	transform: skew(-45deg);
+} */
 
 /*=============================================
 =                'About Me' Card              =
@@ -26,44 +34,25 @@
 
 /* Actual card itself */
 #abtme-card {
-	background-color: transparent;
-	opacity: 0.7 !important;
 	color: #b69979;
-
-	padding: 1rem;
-	width: 85vw !important;
-	height: 80vh;
-	font-weight: 999;
-	text-shadow: 1px 0 #b69979;
-	text-align: left;
-	font-size: 1.2rem;
-
-	position: absolute;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-
-	/* Set a specific width for smaller viewports using a media query */
-	@media (max-width: 1200px) {
-		width: 80%; /* Set a specific width for smaller viewports */
-		font-size: 0.75rem;
-	}
+	max-width: 100rem;
+	width: 90% !important;
+	font-weight: 400;
 }
 
 /* Title within the About Me Card */
 #abtme-title {
-	padding-bottom: 0px !important;
-	/* animation: shudder 4s ease infinite; */
-	font-size: max(4.5vw, 2rem);
-	font-weight: 600;
-	color: #527296;
-	font-style: italic;
-	font-family: 'Nanum Pen Script';
+	font-size: max(2.75rem, 2rem);
+	font-weight: 400;
+
+	/* font-family: 'Nanum Pen Script'; */
+	color: white;
 }
 
+
 .abtme-text {
-	color: rgb(30, 29, 29);
-	font-weight: bold;
+	color: white;
+	font-weight: 400;
 }
 
 /*=============================================
@@ -81,7 +70,7 @@
 
 /* Text column */
 .col-sm-8 {
-	padding-left: 2rem !important;
+	padding-left: 2.5rem !important;
 
 	@media (max-width: 575px) {
 		padding-top: 1rem;
@@ -92,11 +81,8 @@
 #abtme-img {
 	/* Center my face within the img-div */
 	max-width: 100%;
+	padding: 0.25rem;
 	max-height: 100%;
-	border-radius: 0%;
-	box-shadow: 0.4rem 0.4rem rgb(27, 27, 27) !important;
-
-	@media (max-width: 575px) {
-		max-width: 50%;
-	}
+	box-shadow: 0.4rem 0.4rem white !important;
+	border-radius: 20rem;
 }

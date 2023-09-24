@@ -10,7 +10,7 @@
 	max-width: 100%;
 	margin-top: -5.2rem !important;
 
-	background: linear-gradient(-45deg, #736c56, #527296, black);
+	background: linear-gradient(-45deg, rgb(17 24 39), #527296);
 	background-size: 400% 400%;
 	border-bottom: 0.2rem solid white;
 	color: white;
@@ -23,11 +23,6 @@
 	justify-content: center; /* Horizontally centers content */
 	align-items: center; /* Vertically centers content */
 	text-align: center; /* Horizontally centers text */
-
-	@media (max-width: 991px) {
-		margin-top: -10.2rem !important;
-		height: 105vh;
-	}
 }
 
 /* Styles for the card that contains the header text */
@@ -35,7 +30,6 @@
 	width: 100%;
 	background-color: transparent;
 	border: none;
-	padding: 1rem;
 }
 
 /*=============================================
@@ -43,12 +37,11 @@
 =============================================*/
 
 .name {
-	font-size: max(6vw, 2.7rem) !important;
+	font-size: max(6vw, 3rem) !important;
 	font-weight: bold !important;
 	z-index: 2 !important;
 	position: relative;
 	width: fit-content;
-	text-shadow: 0 0 1px #ffffff;
 }
 
 .name::before {
@@ -75,8 +68,9 @@
 
 #header-description {
 	font-style: italic;
-	font-size: max(1.5vw, 0.8rem);
+	font-size: max(1.5rem, 0.8rem);
 	color: silver;
+	width: fit-content;
 }
 
 /*=============================================

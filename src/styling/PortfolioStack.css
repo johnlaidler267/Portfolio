@@ -1,26 +1,35 @@
 @import url('./Animations.css');
 
-/* Styles for a container element */
-.container {
-	width: 100% !important; /* Set the container's width to 100% and override any other styles */
-}
-
 /*=============================================
 =                  Background                 =
 =============================================*/
 
 /* Styles for the background of the portfolio section */
 .portfolio-bg {
-	/* Center the card grid */
-	display: flex;
-	justify-content: center !important;
-	align-items: center !important;
-
-	height: 100vh; /* Set the height of the portfolio section to 100% of the viewport height */
+	height: fit-content; /* Set the height of the portfolio section to 100% of the viewport height */
 	max-width: 100%;
+	background-color: #f6f9fc; /* Set the background color of the portfolio section to #736c56 */
+	z-index: 1;
+	position: relative;
+}
 
-	background-color: #736c56; /* Set the background color of the portfolio section to #736c56 */
-	opacity: 0.8; /* Set the opacity of the portfolio section to 0.8 */
+/* Applies settings for the slice of the background */
+.portfolio-bg:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0px;
+	width: 100rem;
+	height: 100rem;
+	background: rgb(17 24 39);
+
+	-webkit-transform-origin: 100% 0;
+	-ms-transform-origin: 100% 0;
+	transform-origin: 100% 0;
+	-webkit-transform: skew(-45deg);
+	-ms-transform: skew(-66deg);
+	transform: skew(-66deg);
+	z-index: -1;
 }
 
 /*=============================================
@@ -29,62 +38,39 @@
 
 /* Styles for service cards */
 .service-card {
-	background-color: black; /* Set the background color of the card to black */
-	border-radius: 1rem; /* Set the border radius of the card to 1rem (rounded corners) */
-	color: white; /* Set the text color to white */
+	background-color: lightgray; /* Set the background color of the card to black */
+	color: #222; /* Set the text color to white */
+
 	display: flex; /* Display the card as a flex container */
 	align-items: center; /* Center-align the items inside the card */
 	justify-content: center;
-	overflow: hidden;
 
 	padding: 3rem; /* Set the padding inside the card to 2rem */
-	font-size: 1.1vw;
+	box-shadow: 6px 10px 0px 5px rgb(17 24 39);
+	border-radius: 16px;
 
-	width: 100%; /* Set the width of the card to 98% */
-	height: 20vw; /* Set the height of the card to 20% of the viewport width */
-
-	/* Device size */
-	@media (max-width: 575px) {
-		display: flex;
-		height: 30vh;
-		width: 100%;
-	}
+	width: fit-content; /* Set the width of the card to 98% */
+	height: fit-content; /* Set the height of the card to 20% of the viewport width */
 }
 
-.service-card .card-title {
-	font-size: max(1.5vw, 10px) !important;
+.title {
+	font-size: max(1.75rem, 0.8rem) !important;
 }
 
 /* Service images */
 .service-image {
-	border-radius: 1rem !important; /* Set the border radius of the image to 1rem and override any other styles */
 	max-width: 100%;
 	max-height: 100%;
-	min-width: 100px;
-	padding: none !important;
-	position: relative;
-	box-sizing: border-box;
+	min-width: 200px;
 
-	/* Device size */
-	@media (max-width: 575px) {
-		width: 110px !important;
-	}
+	object-fit: contain;
+	aspect-ratio: 1/1;
 }
 
 /* Columns (image,text) within the service-card */
 .service-col {
-	align-items: center; /* Vertical-align the items inside the column */
-	justify-content: center; /* Horizontal-align the content inside the column */
-
-	/* Device size */
-	@media (max-width: 575px) {
-		margin-top: 1rem !important;
-		font-size: 0.5rem;
-		text-align: center;
-	}
-}
-
-.row {
+	display: flex;
+	align-items: center;
 	justify-content: center;
 }
 
@@ -106,12 +92,7 @@
 	position: relative !important; /* Set the position to relative and override any other styles */
 	text-align: center !important; /* Center-align the text inside the button and override any other styles */
 	text-transform: uppercase !important; /* Transform the text to uppercase and override any other styles */
-	font-size: max(1.1vw, 7px) !important;
-
-	/* Device size */
-	@media (max-width: 575px) {
-		margin-bottom: 1rem;
-	}
+	font-size: max(1rem, 7px) !important;
 }
 
 /* Styles for the inner content of service buttons */
@@ -156,58 +137,16 @@
 }
 
 /*=============================================
-=            Service Card Grid            =
-=============================================*/
-
-/* Styles for the grid layout in the portfolio section */
-.portfolio-grid {
-	display: grid; /* Display the portfolio grid as a grid container */
-	align-content: center; /* Center-align the content inside the portfolio grid */
-	justify-items: center; /* Center-align the items inside the grid horizontally */
-
-	grid-template-columns: auto auto; /* Set the grid columns to have automatic width */
-	grid-template-rows: auto auto auto; /* Set the grid rows to have automatic height */
-	grid-gap: 1.5rem;
-
-	max-width: 85vw;
-}
-
-/* Styles for specific portfolio items */
-.github {
-	grid-column: 1; /* Position the item in the first grid column */
-	grid-row: 2; /* Position the item in the second grid row */
-}
-
-.youtube {
-	grid-column: 1; /* Position the item in the first grid column */
-	grid-row: 3; /* Position the item in the third grid row */
-}
-
-.spotify {
-	grid-column: 2; /* Position the item in the second grid column */
-	grid-row: 2; /* Position the item in the second grid row */
-}
-
-.reading {
-	grid-column: 2; /* Position the item in the second grid column */
-	grid-row: 3; /* Position the item in the third grid row */
-}
-
-/*=============================================
 =          Scrolling Title  (View My)         =
 =============================================*/
 
 /* Styles for the title divs */
 .title-div {
-	color: rgb(231, 219, 205); /* Set the text color to white */
-	font-size: max(4vw, 2rem) !important; /* Set the font size to 2rem and override any other styles */
-	font-weight: 600 !important; /* Set the font weight to 100 and override any other styles */
-	font-family: 'Nanum Pen Script' !important;
-	font-style: italic !important;
-	justify-self: start; /* Align the title divs to the start (left) of the grid cells */
-	width: 100%; /* Set the width to 100% */
+	color: #f6f9fc; /* Set the text color to white */
+	font-size: max(2.75rem, 2rem) !important; /* Set the font size to 2rem and override any other styles */
+	font-weight: 400 !important; /* Set the font weight to 100 and override any other styles */
 
-	/* Make the title take up both columns */
+	/* Make the title take up both columns
 	grid-row: 1;
-	grid-column: 1 / -1;
+	grid-column: 1; */
 }

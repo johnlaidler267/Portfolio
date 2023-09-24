@@ -4,6 +4,7 @@ import reveal from './scroll.js'
 import NavBar from './components/NavBar.jsx';
 import Header from './components/Header.jsx';
 import AboutMe from './components/AboutMe.jsx';
+import Projects from './components/Projects.jsx';
 import PortfolioStack from './components/PortfolioStack.jsx';
 import DirectContact from './components/DirectContact.jsx';
 import { useEffect } from 'react';
@@ -19,6 +20,7 @@ function App() {
       <NavBar />
       <Header />
       <AboutMe />
+      <Projects />
       <PortfolioStack />
       <DirectContact />
     </div>
