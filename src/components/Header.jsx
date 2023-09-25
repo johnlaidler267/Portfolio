@@ -1,5 +1,5 @@
 //React
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import reveal from '../scroll.js';
 
@@ -14,9 +14,8 @@ import Contact from './Contact';
 
 // Header component: Contains my name/conctact info
 const Header = () => {
-	useEffect(() => {
-		reveal();
-	}, []);
+	const [didAnimate, setDidAnimate] = useState(false);
+
 	return (
 		<div id="header-bg">
 			<a className="arrow" href="#abtme-bg">

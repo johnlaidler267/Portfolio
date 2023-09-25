@@ -9,6 +9,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function reveal() {
     gsap.utils.toArray(".revealUp").forEach(function (elem) {
+
         // Get all elements with the class "revealUp" and loop through them.
 
         ScrollTrigger.create({
@@ -17,13 +18,13 @@ export default function reveal() {
             trigger: elem,
             // Set the trigger to be the current element, meaning the animation will start when the element comes into view.
 
-            start: "top 90%",
+            start: "top 100%",
             // Set the start position of the trigger point for the animation at 80% from the top of the viewport.
 
-            end: "bottom 3%",
+            end: "bottom 20%",
             // Set the end position of the trigger point for the animation at 20% from the bottom of the viewport.
 
-            markers: true,
+            markers: false,
             // Display visual markers on the page to show the trigger points and animation ranges. (Useful for debugging)
 
             onEnter: function () {
