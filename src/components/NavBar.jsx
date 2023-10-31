@@ -1,11 +1,9 @@
 import React from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import '../styling/NavBar.css';
-import { Document, Page, pdfjs } from 'react-pdf';
 
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
+const resume = 'https://drive.google.com/file/d/1i7SGUApOT-_8pI5YLY6KMdhzILGZh2a2/view?usp=drive_link';
 
-const resume = 'https://drive.google.com/file/d/16SENQcZRTrCvGC6kkG0koaQvq2m-3fjD/view?usp=drive_link';
 const MyNavbar = () => {
 	return (
 		<Navbar className="navbar navbar-blur" sticky="top" expand="lg">
