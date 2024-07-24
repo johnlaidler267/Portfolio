@@ -2,7 +2,7 @@ import React from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import '../styling/NavBar.css';
 
-const resume = 'https://drive.google.com/file/d/1i7SGUApOT-_8pI5YLY6KMdhzILGZh2a2/view?usp=drive_link';
+const resume = 'https://drive.google.com/file/d/1ieuy7dVTx4LNKljptwqlBf4XkBxfstCO/view?usp=sharing';
 
 const MyNavbar = () => {
 	return (

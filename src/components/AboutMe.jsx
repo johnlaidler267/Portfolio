@@ -5,7 +5,7 @@ import React from 'react';
 import '../styling/AboutMe.css';
 
 //REACT BOOTSTRAP
-import { Card, Col, Row, Container } from 'react-bootstrap';
+import { Card, Col, Row } from 'react-bootstrap';
 
 //IMAGES
 import profile from '../images/ProfilePic.png';

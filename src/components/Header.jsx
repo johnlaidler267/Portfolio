@@ -14,8 +14,6 @@ import Contact from './Contact';
 
 // Header component: Contains my name/conctact info
 const Header = () => {
-	const [didAnimate, setDidAnimate] = useState(false);
-
 	return (
 		<div id="header-bg">
 			<a className="arrow" href="#abtme-bg">
