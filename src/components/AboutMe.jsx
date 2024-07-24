@@ -29,13 +29,14 @@ const AboutMe = () => {
 							</div>
 
 							<Card.Text className="revealUp abtme-text">
-								Hey, my name’s <b>Johnny</b>. This website was built, partly for practice with React/JSX, partly to showcase some of the stuff I work on. I’m 22 years old, a graduate from the{' '}
-								<b>University of Massachusetts, Amherst.</b>
+								Hey, my name’s <b>John</b> (or <b>Johnny</b> as most friends know me). This website was built, partly for practice with React/JSX, partly to showcase some of the stuff I work on. I’m
+								23 years old, and a graduate from the <b>University of Massachusetts, Amherst.</b>
 							</Card.Text>
 							<Card.Text className="revealUp abtme-text">
-								I like front-end design because I’m fond on aesthetic things, and appreciate the process of watching my code come to life. My plan is to become a <b>software engineer.</b>
+								I'm focused on <b>full-stack software development</b> because I’m fond on organization/compartmentalization, the process of iterative improvement, and the design of aesthetic and
+								user-friendly interfaces.
 							</Card.Text>
-							<Card.Text className="revealUp abtme-text">I also like to solo-travel. To listen to podcasts that explain stuff. To play basketball. To watch animal documentaries.</Card.Text>
+							<Card.Text className="revealUp abtme-text">I also like to solo-travel. To listen to podcasts that explain how stuff works. To play basketball. To watch animal documentaries.</Card.Text>
 							<Card.Text className="revealUp abtme-text mb-3">This whole thing is a work in progress. Tis' life, I suppose..</Card.Text>
 						</Col>
 					</Row>

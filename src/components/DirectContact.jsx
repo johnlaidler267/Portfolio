@@ -1,5 +1,5 @@
 import { useRef, useState, React } from 'react';
-import { Card, Container, Col, Modal, InputGroup, Form, Button } from 'react-bootstrap';
+import { Modal, InputGroup, Form, Button } from 'react-bootstrap';
 import '../styling/DirectContact.css';
 
 //Import ICONS
@@ -13,11 +13,15 @@ const DirectContact = () => {
 	const [visible, setVisible] = useState(false); // State to control modal visibility
 
 	const handleSubmission = (e) => {
+		const userID = 'hHXBMxFkFC_fyovLw';
+		const serviceID = 'service_lkizw2v';
+		const templateID = 'template_94d1g33';
+
 		//stop a browser's default behavior for an event, enabling custom actions to be executed instead.
 		e.preventDefault();
 
 		// send email to myself through emailjs API
-		emailjs.sendForm('jy-portfolio', 'template_ae3uwin', form.current, 'nqhBwzVigKsL0dcN1').then(
+		emailjs.sendForm(serviceID, templateID, form.current, userID).then(
 			(result) => {
 				console.log(form.current.elements);
 			},
@@ -47,6 +51,7 @@ const DirectContact = () => {
 						<Form.Label style={{ color: '#adbdcc' }} className="revealUp">
 							Send me a message! Hatemail! Love letters! Or, ya know, professional matters.
 						</Form.Label>
+
 						<div className="revealUp" style={{ width: '100%', justifyItems: 'center' }}>
 							<InputGroup className="mb-3">
 								<InputGroup.Text>First/Last</InputGroup.Text>
@@ -56,7 +61,7 @@ const DirectContact = () => {
 
 							<InputGroup className="mb-3">
 								<InputGroup.Text>Email</InputGroup.Text>
-								<Form.Control name="email" className="form-control" aria-label="email" type="email" pattern="[a-z@a-z]*" required />
+								<Form.Control name="email" className="form-control" aria-label="email" type="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required />
 							</InputGroup>
 
 							<InputGroup>
@@ -66,7 +71,7 @@ const DirectContact = () => {
 
 							<div className="w-100 d-flex justify-content-center">
 								<Button type="submit" className="send-btn">
-									Send
+									Send Email
 								</Button>
 							</div>
 						</div>

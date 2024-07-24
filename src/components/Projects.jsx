@@ -53,14 +53,6 @@ const styles = {
 	description: {
 		marginBottom: '1rem',
 	},
-	button: {
-		padding: '1rem',
-		backgroundColor: 'rgb(17 24 39)',
-		boxShadow: '0.4rem 0.4rem white',
-		color: 'white',
-		textDecoration: 'none',
-		width: 'fit-content',
-	},
 };
 
 const projects = [
@@ -104,7 +96,7 @@ const Projects = () => {
 						<div className="title-bg"></div>
 					</h2>
 				</div>
-				<div style={styles.projectsContainer} className="revealUp">
+				<div className="revealUp" id="projectsContainer">
 					{projects.map((project, index) => (
 						<Project key={index} project={project} />
 					))}
@@ -116,30 +108,33 @@ const Projects = () => {
 
 const Project = ({ project }) => {
 	return (
-		<div className="row m-auto" style={styles.projectContainer}>
+		<div className="row m-auto" id="projectContainer">
 			<div className="col col-12 col-md-7 m-auto">
-				<div style={styles.descriptionContainer}>
-					<h2 style={styles.title}>
+				<div id="descriptionContainer">
+					<h2 className="title">
 						<b>{project.title}</b>
 					</h2>
-					<h6 style={styles.subtitle}>{project.subtitle}</h6>
-					<div style={styles.bubblesContainer}>
+
+					<h6 className="subtitle">{project.subtitle}</h6>
+
+					<div id="bubblesContainer">
 						{project.technologies.map((tech, index) => (
-							<div key={index} style={styles.bubble}>
+							<div key={index} className="bubble">
 								{tech}
 							</div>
 						))}
 					</div>
-					<p style={styles.description}>{project.description}</p>
+
+					<p className="description">{project.description}</p>
 					{project.githubLink !== '' && (
-						<a className="d-flex" href={project.githubLink} style={styles.button}>
+						<a className="d-flex gh-button" href={project.githubLink}>
 							Github Repo
 						</a>
 					)}
 				</div>
 			</div>
 			<div className="d-flex justify-content-center col-12 col-md-5 m-auto">
-				<img src={project.imageLink} alt={project.title} style={styles.image} />
+				<img src={project.imageLink} alt={project.title} className="image" />
 			</div>
 		</div>
 	);

@@ -13,3 +13,79 @@
 	flex-direction: column;
 	align-items: center;
 }
+
+/* Button Styles */
+.gh-button {
+	padding: 1rem;
+	background-color: rgb(17 24 39);
+	box-shadow: 0.4rem 0.4rem white;
+	color: white;
+	text-decoration: none;
+	width: fit-content;
+}
+
+.gh-button:hover {
+	background-color: white;
+	box-shadow: 0.4rem 0.4rem rgb(17 24 39);
+	color: rgb(17 24 39);
+}
+
+#projectsContainer {
+	background-color: lightgray;
+}
+
+#projectContainer {
+	border-left: 2px dashed darkgray;
+}
+
+#descriptionContainer {
+	flex: 1;
+	padding-bottom: 2rem;
+	white-space: pre-line;
+}
+
+.image {
+	flex: 1;
+	max-width: 100%;
+	aspect-ratio: 1/1;
+	object-fit: contain;
+}
+
+.title {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+.subtitle {
+	color: #425466;
+}
+
+#bubblesContainer {
+	display: flex;
+	margin-bottom: 1rem;
+	margin-top: 1rem;
+}
+
+.bubble {
+	margin-right: 1rem;
+	padding: 0.75rem;
+	border-radius: 2rem;
+	background-color: rgb(17 24 39);
+	box-shadow: 0px 0px 7px white;
+	height: fit-content;
+	width: fit-content;
+	font-size: 2vmin;
+	color: white;
+	display: inline-block;
+	text-align: center;
+	line-height: 1;
+	transition: background-color 0.3s ease;
+}
+
+.bubble:hover {
+	background-color: #425466;
+}
+
+.description {
+	margin-bottom: 1rem;
+}
