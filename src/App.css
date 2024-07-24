@@ -1,0 +1,21 @@
+div.relative {
+	position: relative;
+	height: fit-content;
+	width: fit-content;
+}
+
+.title-bg {
+	background-color: rgb(159, 146, 146);
+	position: absolute;
+
+	top: 50%;
+	z-index: -1;
+
+	height: 40%;
+	width: 100%;
+}
+
+.revealUp {
+	opacity: 0;
+	visibility: hidden;
+}
